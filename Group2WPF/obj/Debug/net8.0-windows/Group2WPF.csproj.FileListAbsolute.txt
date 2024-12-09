@@ -1,0 +1,416 @@
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\appsettings.josn
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.exe
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.deps.json
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.runtimeconfig.json
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.pdb
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.pdb
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.pdb
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.pdb
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.AssemblyReference.cache
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\App.g.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.cache
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.lref
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\App.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.baml
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.g.resources
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfoInputs.cache
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfo.cs
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.CoreCompileInputs.cache
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.sourcelink.json
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.Up2Date
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.dll
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\refint\Group2WPF.dll
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.pdb
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.genruntimeconfig.cache
+D:\FU\PRN212\Fly\Group2WPF\obj\Debug\net8.0-windows\ref\Group2WPF.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\appsettings.josn
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Login.xaml.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.exe
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.deps.json
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.runtimeconfig.json
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.pdb
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.pdb
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\84355\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.pdb
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.AssemblyReference.cache
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.cache
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.lref
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\App.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.baml
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.g.resources
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfoInputs.cache
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfo.cs
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.CoreCompileInputs.cache
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.sourcelink.json
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.Up2Date
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\refint\Group2WPF.dll
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.pdb
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.genruntimeconfig.cache
+C:\Users\84355\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\ref\Group2WPF.dll
+D:\FU\PRN212\Fly\Group2WPF\bin\Debug\net8.0-windows\Login.xaml.cs
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Login.xaml.cs
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\appsettings.josn
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.exe
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.deps.json
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.runtimeconfig.json
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.pdb
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.dll
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.pdb
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.pdb
+D:\Assigment PRN\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.pdb
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.AssemblyReference.cache
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\App.g.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.cache
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.lref
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\App.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.baml
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.g.resources
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfoInputs.cache
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfo.cs
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.CoreCompileInputs.cache
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.sourcelink.json
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.Up2Date
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.dll
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\refint\Group2WPF.dll
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.pdb
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.genruntimeconfig.cache
+D:\Assigment PRN\Fly\Group2WPF\obj\Debug\net8.0-windows\ref\Group2WPF.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\appsettings.josn
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Login.xaml.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.exe
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.deps.json
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.runtimeconfig.json
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Group2WPF.pdb
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\msalruntime.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Services.pdb
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\DataAccess.pdb
+C:\Users\trong\Downloads\Fly\Group2WPF\bin\Debug\net8.0-windows\Repositories.pdb
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.AssemblyReference.cache
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.cache
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF_MarkupCompile.lref
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\App.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirlineWPF.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\AirportWPF.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BaggageWindow.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingPlatformWindow.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\BookingWPF.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\FlightWPF.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Login.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\PassengerWPF.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Window1.baml
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.g.resources
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfoInputs.cache
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.AssemblyInfo.cs
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.CoreCompileInputs.cache
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.sourcelink.json
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.csproj.Up2Date
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\refint\Group2WPF.dll
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.pdb
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\Group2WPF.genruntimeconfig.cache
+C:\Users\trong\Downloads\Fly\Group2WPF\obj\Debug\net8.0-windows\ref\Group2WPF.dll

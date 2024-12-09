@@ -1,0 +1,72 @@
+D:\FU\PRN212\Fly\Services\bin\Debug\net8.0\Services.deps.json
+D:\FU\PRN212\Fly\Services\bin\Debug\net8.0\Services.dll
+D:\FU\PRN212\Fly\Services\bin\Debug\net8.0\Services.pdb
+D:\FU\PRN212\Fly\Services\bin\Debug\net8.0\DataAccess.dll
+D:\FU\PRN212\Fly\Services\bin\Debug\net8.0\Repositories.dll
+D:\FU\PRN212\Fly\Services\bin\Debug\net8.0\Repositories.pdb
+D:\FU\PRN212\Fly\Services\bin\Debug\net8.0\DataAccess.pdb
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.sourcelink.json
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.dll
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\refint\Services.dll
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\Services.pdb
+D:\FU\PRN212\Fly\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\84355\Downloads\Fly\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\84355\Downloads\Fly\Services\bin\Debug\net8.0\Services.dll
+C:\Users\84355\Downloads\Fly\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\84355\Downloads\Fly\Services\bin\Debug\net8.0\DataAccess.dll
+C:\Users\84355\Downloads\Fly\Services\bin\Debug\net8.0\Repositories.dll
+C:\Users\84355\Downloads\Fly\Services\bin\Debug\net8.0\Repositories.pdb
+C:\Users\84355\Downloads\Fly\Services\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.dll
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\84355\Downloads\Fly\Services\obj\Debug\net8.0\ref\Services.dll
+D:\Assigment PRN\Fly\Services\bin\Debug\net8.0\Services.deps.json
+D:\Assigment PRN\Fly\Services\bin\Debug\net8.0\Services.dll
+D:\Assigment PRN\Fly\Services\bin\Debug\net8.0\Services.pdb
+D:\Assigment PRN\Fly\Services\bin\Debug\net8.0\DataAccess.dll
+D:\Assigment PRN\Fly\Services\bin\Debug\net8.0\Repositories.dll
+D:\Assigment PRN\Fly\Services\bin\Debug\net8.0\Repositories.pdb
+D:\Assigment PRN\Fly\Services\bin\Debug\net8.0\DataAccess.pdb
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.sourcelink.json
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.dll
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\refint\Services.dll
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\Services.pdb
+D:\Assigment PRN\Fly\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\trong\Downloads\Fly\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\trong\Downloads\Fly\Services\bin\Debug\net8.0\Services.dll
+C:\Users\trong\Downloads\Fly\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\trong\Downloads\Fly\Services\bin\Debug\net8.0\DataAccess.dll
+C:\Users\trong\Downloads\Fly\Services\bin\Debug\net8.0\Repositories.dll
+C:\Users\trong\Downloads\Fly\Services\bin\Debug\net8.0\Repositories.pdb
+C:\Users\trong\Downloads\Fly\Services\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.dll
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\ref\Services.dll

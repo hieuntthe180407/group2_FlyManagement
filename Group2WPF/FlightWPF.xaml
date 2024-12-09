@@ -1,0 +1,85 @@
+﻿<Window x:Class="Group2WPF.FlightWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group2WPF"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen"
+        Title="FlightWPF" Height="700" Width="1000">
+    <Grid>
+
+
+
+        <Label x:Name="lblFlightMana" Content="Flight Management" HorizontalAlignment="Left" Margin="342,10,0,0" VerticalAlignment="Top" FontSize="36"/>
+
+        <Label x:Name="lblFlightID" Content="Flight ID: " HorizontalAlignment="Left" Margin="137,69,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <TextBox x:Name="txtFlightID" Text="" HorizontalAlignment="Left" Margin="325,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+
+        <Label x:Name="lblAirlineID" Content="Airline ID: " HorizontalAlignment="Left" Margin="137,113,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <TextBox x:Name="txtAirlineID" Text="" HorizontalAlignment="Left" Margin="326,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+
+        <Label x:Name="lblDepartingAirport" Content="Departing Airport:" HorizontalAlignment="Left" Margin="137,155,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <TextBox x:Name="txtDepartingAirport" Text="" HorizontalAlignment="Left" Margin="326,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
+
+        <Label x:Name="lblArrivingAirport" Content="Arriving Airport:" HorizontalAlignment="Left" Margin="140,197,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtArrivingAirport" Text="" HorizontalAlignment="Left" Margin="326,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+
+        <Label x:Name="lblDepartingGate" Content="Departing Gate:" HorizontalAlignment="Left" Margin="584,69,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <TextBox x:Name="txtDepartingGate" Text="" HorizontalAlignment="Left" Margin="750,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184"/>
+
+        <Label x:Name="lblArrivingGate" Content="Arriving Gate:" HorizontalAlignment="Left" Margin="584,113,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtArrivingGate" Text="" HorizontalAlignment="Left" Margin="750,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+
+        <Label x:Name="lblDepartureTime" Content="Departure Time: " HorizontalAlignment="Left" Margin="584,155,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <DatePicker Name="dpDepartureTime" HorizontalAlignment="Left" Margin="750,161,0,0" VerticalAlignment="Top" Width="185"/>
+
+        <Label x:Name="lblArrivalTime" Content="Arrival Time: " HorizontalAlignment="Left" Margin="587,197,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <DatePicker x:Name="dpArrivalTime" HorizontalAlignment="Left" Margin="750,203,0,0" VerticalAlignment="Top" Width="185"/>
+
+
+
+
+        <Label x:Name="lblFliter" Content="Fliter: " HorizontalAlignment="Left" Margin="25,276,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <Label x:Name="lblFliterFlightID" Content="Flight ID: " HorizontalAlignment="Left" Margin="25,318,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
+        <TextBox x:Name="txtFlightIDFliter" Text="" TextChanged="txtSearchByFlightID_TextChanged" HorizontalAlignment="Left" Margin="25,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+
+        <Label x:Name="lblFliterAirlineID" Content="Airline ID: " HorizontalAlignment="Left" Margin="25,399,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtAirlineIDFliter" Text="" TextChanged="txtSearchByAirlineID_TextChanged" HorizontalAlignment="Left" Margin="25,451,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+
+        <Label x:Name="lblFliterDepartingAirport" Content="Departing Airport:" HorizontalAlignment="Left" Margin="25,499,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtDepartingAirportFliter" Text="" TextChanged="txtSearchByDepartingAirport_TextChanged" HorizontalAlignment="Left" Margin="25,541,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+
+        <Label x:Name="lblFliterArrivingAirport" Content="Arriving Airport:" HorizontalAlignment="Left" Margin="25,583,0,0" VerticalAlignment="Top" FontSize="20" HorizontalContentAlignment="Center" Foreground="Black" IsEnabled="False"/>
+        <TextBox x:Name="txtArrivingAirportFliter" Text="" TextChanged="txtSearchByArrivingAirport_TextChanged" HorizontalAlignment="Left" Margin="25,625,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127"/>
+
+        <DataGrid x:Name="dgData" Margin="262,276,34,115"
+          SelectionChanged="dgData_SelectionChanged"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="534,596,0,41"
+        Width="80" Background="#FF0099FF" BorderBrush="White" Foreground="White"
+        Click="btnCreate_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="634,596,0,41"
+        Width="80" Background="#FF1B7140" BorderBrush="White" Foreground="White"
+        RenderTransformOrigin="0.37,0.2" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="741,596,0,41"
+        Width="80" Background="#FFA2AA3D" BorderBrush="White" Foreground="White"
+        RenderTransformOrigin="0.37,0.2" Click="btnDelete_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="846,596,0,41" 
+                Width="80" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="431,596,0,41"
+            Width="80" Background="#FF4D88AF" BorderBrush="White" Foreground="White"
+            Click="btnReset_Click"/>
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>

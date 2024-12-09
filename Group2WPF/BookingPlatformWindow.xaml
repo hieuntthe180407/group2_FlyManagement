@@ -1,0 +1,77 @@
+﻿<Window x:Class="Group2WPF.BookingPlatformWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group2WPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Booking Platform" Height="750" Width="1000">
+
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#FF00588A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#FF003E62"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Add Title Label -->
+        <Label Content="Booking Platform" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontSize="24" FontWeight="Bold"/>
+
+        <DataGrid x:Name="DataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="483" Margin="306,91,0,0" VerticalAlignment="Top" Width="646" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" IsReadOnly="True" FontSize="14" FontWeight="Bold" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name" FontSize="14" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Url}" Header="URL" FontSize="14" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="75,147,0,0"/>
+
+        <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,242,0,0" RenderTransformOrigin="0.592,0.218"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="75,250,0,0"/>
+
+        <Label Content="URL:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,347,0,0" RenderTransformOrigin="0.447,4.579"/>
+        <TextBox x:Name="UrlTextBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200" Margin="75,0,0,0" RenderTransformOrigin="0.499,-3.238"/>
+
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="306,607,0,0" Click="AddButton_Click" Background="#FF007ACC" RenderTransformOrigin="-2.876,3.833"/>
+        <Button Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="425,607,0,0" Click="EditButton_Click" Background="#FF28A745"/>
+        <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="554,607,0,0" Click="DeleteButton_Click" Background="#FFDC3545" RenderTransformOrigin="0.189,0.38"/>
+        <Button Content="Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="710,607,0,0" Click="ResetButton_Click" Background="#FF6C757D" RenderTransformOrigin="-0.069,0.613"/>
+        <Button Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="850,607,0,0" Click="CloseButton_Click" Background="#FF343A40"/>
+
+        <Label Content="Filter By Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="306,57,0,0"/>
+        <TextBox x:Name="FilterTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="492,57,0,0" TextChanged="FilterTextBox_TextChanged" RenderTransformOrigin="0.497,-0.987"/>
+        <Label Content="ID :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,139,0,0" RenderTransformOrigin="0.5,0.5" Width="50"/>
+    </Grid>
+</Window>

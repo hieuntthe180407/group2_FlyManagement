@@ -1,0 +1,91 @@
+﻿<Window x:Class="Group2WPF.BaggageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group2WPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Baggage Management" Height="750" Width="1000">
+
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#FF00588A"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#FF003E62"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <!-- Add Title Label -->
+        <Label Content="Baggage Management" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontSize="24" FontWeight="Bold"/>
+
+        <DataGrid x:Name="BaggageDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="auto" Margin="306,147,0,0" VerticalAlignment="Top" Width="646" SelectionChanged="BaggageDataGrid_SelectionChanged"
+                   CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Id}" Header="ID" IsReadOnly="True" FontSize="14" FontWeight="Bold" Width="Auto"/>
+                <DataGridTextColumn Binding="{Binding BookingId}" Header="Booking ID" FontSize="14" Width="*"/>
+                <DataGridTextColumn Binding="{Binding WeightInKg}" Header="Weight (kg)" FontSize="14" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="45,0,0,122">
+            <Button Content="First" Click="FirstPageButton_Click" Margin="5"/>
+            <Button Content="Previous" Click="PreviousPageButton_Click" Margin="5"/>
+            <TextBlock Text="{Binding CurrentPageText}" VerticalAlignment="Center" Margin="10,0"/>
+            <Button Content="Next" Click="NextPageButton_Click" Margin="5" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.521"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Button Content="Last" Click="LastPageButton_Click" Margin="5"/>
+        </StackPanel>
+
+        <Label Content="ID :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,139,0,0" RenderTransformOrigin="0.5,0.5" Width="50"/>
+        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="104,147,0,0" Height="21"/>
+
+        <Label Content="Booking ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,242,0,0" RenderTransformOrigin="0.592,0.218"/>
+        <ComboBox x:Name="BookingIdComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="104,251,0,0" DisplayMemberPath="Id" SelectedValuePath="Id" Height="20"/>
+
+        <Label Content="Weight (kg):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="14,349,0,0" RenderTransformOrigin="0.447,4.579"/>
+        <TextBox x:Name="WeightInKgTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="104,349,0,0" RenderTransformOrigin="0.499,-3.238" Height="25" TextChanged="WeightInKgTextBox_TextChanged"/>
+
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="306,671,0,0" Click="AddButton_Click" Background="#FF007ACC"/>
+        <Button Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="425,671,0,0" Click="EditButton_Click" Background="#FF28A745"/>
+        <Button Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="554,671,0,0" Click="DeleteButton_Click" Background="#FFDC3545"/>
+        <Button Content="Reset" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="706,671,0,0" Click="ResetButton_Click" Background="#FF6C757D"/>
+        <Button Content="Close" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="825,671,0,0" Click="CloseButton_Click" Background="#FF343A40"/>
+    </Grid>
+</Window>

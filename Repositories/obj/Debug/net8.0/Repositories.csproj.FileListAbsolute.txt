@@ -1,0 +1,64 @@
+D:\FU\PRN212\Fly\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\FU\PRN212\Fly\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\FU\PRN212\Fly\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\FU\PRN212\Fly\Repositories\bin\Debug\net8.0\DataAccess.dll
+D:\FU\PRN212\Fly\Repositories\bin\Debug\net8.0\DataAccess.pdb
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\FU\PRN212\Fly\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+C:\Users\84355\Downloads\Fly\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\84355\Downloads\Fly\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\84355\Downloads\Fly\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\84355\Downloads\Fly\Repositories\bin\Debug\net8.0\DataAccess.dll
+C:\Users\84355\Downloads\Fly\Repositories\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\84355\Downloads\Fly\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+D:\Assigment PRN\Fly\Repositories\bin\Debug\net8.0\Repositories.deps.json
+D:\Assigment PRN\Fly\Repositories\bin\Debug\net8.0\Repositories.dll
+D:\Assigment PRN\Fly\Repositories\bin\Debug\net8.0\Repositories.pdb
+D:\Assigment PRN\Fly\Repositories\bin\Debug\net8.0\DataAccess.dll
+D:\Assigment PRN\Fly\Repositories\bin\Debug\net8.0\DataAccess.pdb
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.dll
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\Repositories.pdb
+D:\Assigment PRN\Fly\Repositories\obj\Debug\net8.0\ref\Repositories.dll
+C:\Users\trong\Downloads\Fly\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\Users\trong\Downloads\Fly\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\Users\trong\Downloads\Fly\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\Users\trong\Downloads\Fly\Repositories\bin\Debug\net8.0\DataAccess.dll
+C:\Users\trong\Downloads\Fly\Repositories\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\Users\trong\Downloads\Fly\Repositories\obj\Debug\net8.0\ref\Repositories.dll

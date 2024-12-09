@@ -1,0 +1,60 @@
+D:\FU\PRN212\Fly\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\FU\PRN212\Fly\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+D:\FU\PRN212\Fly\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\FU\PRN212\Fly\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+D:\FU\PRN212\Fly\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+C:\Users\84355\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+C:\Users\84355\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+C:\Users\84355\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.dll
+C:\Users\84355\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.dll
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+C:\Users\84355\Downloads\Fly\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+D:\Assigment PRN\Fly\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\Assigment PRN\Fly\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+D:\Assigment PRN\Fly\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\Assigment PRN\Fly\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+D:\Assigment PRN\Fly\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+C:\Users\trong\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+C:\Users\trong\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+C:\Users\trong\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.dll
+C:\Users\trong\Downloads\Fly\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.dll
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

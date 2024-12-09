@@ -1,0 +1,132 @@
+﻿<Window x:Class="Group2WPF.AirportWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Group2WPF"
+        mc:Ignorable="d"
+        Loaded="Airport_Loaded"
+        WindowStartupLocation="CenterScreen"
+        Title="AirportWPF"  Height="700" Width="1000" 
+        Background="#FFD2E9FF">
+    <Window.Resources>
+        <!-- Style for buttons inside DataGrid -->
+        <Style x:Key="DataGridButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#005E91"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#005E91"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#00476B"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <!-- Header Section -->
+        <Label Content="Airport Management" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Margin="0,20,0,0" Foreground="#333"/>
+
+        <!-- Filter and Form Section -->
+        <Border Margin="20,83,20,342" Background="#FFF" BorderBrush="#CCC" BorderThickness="1" CornerRadius="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="36"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="26"/>
+                    <RowDefinition Height="Auto" MinHeight="39"/>
+                    <RowDefinition Height="Auto" MinHeight="64.96"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="73"/>
+                    <ColumnDefinition Width="156"/>
+                    <ColumnDefinition Width="440"/>
+                    <ColumnDefinition Width="0"/>
+                    <ColumnDefinition Width="289"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Form Section -->
+                <Label Content="ID:" Grid.Column="0" VerticalAlignment="Center" Margin="5,0,5,0" Height="26" Grid.Row="1"/>
+                <TextBox x:Name="txtairportId" Grid.Column="1" VerticalAlignment="Center" Margin="7,0,13,0" Height="18" Grid.Row="1"/>
+                <Label Content="Code:" Grid.Column="2" VerticalAlignment="Center" Margin="5,0,278,0" Height="26" Grid.Row="1"/>
+                <TextBox x:Name="txtairportCode" Grid.Column="2" VerticalAlignment="Center" Margin="73,0,210,0" Height="18" Grid.Row="1"/>
+                <Label Content="Name:" Grid.Column="2" VerticalAlignment="Center" Margin="235,0,106,0" Height="26" Grid.Row="1"/>
+                <TextBox x:Name="txtairportName" Grid.Column="2" VerticalAlignment="Center" Grid.ColumnSpan="3" Height="18" HorizontalAlignment="Left" Width="155" Margin="313,0,0,0" Grid.Row="1"/>
+
+                <Label Content="Country:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="5,0,5,0" Height="26" RenderTransformOrigin="0.5,0.5">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.337"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+                <TextBox x:Name="txtairportCountry" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="7,0,13,0" Height="18"/>
+                <Label Content="State:" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Margin="5,0,278,0" Height="26"/>
+                <TextBox x:Name="txtairportState" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Margin="73,0,210,0" Height="18"/>
+                <Label Content="City:" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Margin="235,0,0,0" Height="26" HorizontalAlignment="Left" Width="70"/>
+                <TextBox x:Name="txtairportCity" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Margin="313,0,261,0" Height="18" Grid.ColumnSpan="3"/>
+
+                <!-- Button Section -->
+                <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,6" Width="450">
+                    <Button Content="Add" Click="Insert_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Update" Click="Update_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Delete" Click="Delete_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Reset" Click="Reset_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Close" Click="Close_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                </StackPanel>
+
+                <!-- Filter Section -->
+                <StackPanel Grid.Row="4" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Left" Margin="73,10,0,10" Width="300">
+                    <Label Content="Filter:" VerticalAlignment="Center" Margin="5"/>
+                    <Label Content="Search name:" VerticalAlignment="Center" Margin="5"/>
+                    <TextBox x:Name="txtFilter" Width="150" VerticalAlignment="Center" Margin="5" TextChanged="txtFilter_TextChanged"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- DataGrid Section -->
+        <Border BorderBrush="#CCC" BorderThickness="1" CornerRadius="10" Margin="20,286,20,20" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.354"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.994"/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <DataGrid x:Name="dgairports" AutoGenerateColumns="False" 
+                      ItemsSource="{Binding Airports}" SelectionMode="Single" SelectionChanged="dgAirport_SelectionChanged"
+                      RowHeaderWidth="0" CanUserAddRows="False" CanUserDeleteRows="False" Margin="2,-1,0,-4" HorizontalAlignment="Left" Width="961">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="*"/>
+                    <DataGridTextColumn Header="Code" Binding="{Binding Code}" Width="*"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Country" Binding="{Binding Country}" Width="*"/>
+                    <DataGridTextColumn Header="State" Binding="{Binding State}" Width="*"/>
+                    <DataGridTextColumn Header="City" Binding="{Binding City}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</Window>
