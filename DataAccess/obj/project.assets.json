@@ -4487,11 +4487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\trong\\Downloads\\Fly\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\trong\\Downloads\\Fly\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\trong\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\trong\\Downloads\\Fly\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

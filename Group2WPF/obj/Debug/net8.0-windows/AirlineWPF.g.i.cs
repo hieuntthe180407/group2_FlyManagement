@@ -101,7 +101,7 @@ namespace Group2WPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Group2WPF;V1.0.0.0;component/airlinewpf.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Group2WPF;component/airlinewpf.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AirlineWPF.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

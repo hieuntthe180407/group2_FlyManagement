@@ -41,7 +41,7 @@ namespace Repositories
             if (bookingPlatform != null)
             {
                 _context.BookingPlatforms.Remove(bookingPlatform);
-            
+                _context.SaveChanges();
             }
         }
 

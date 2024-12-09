@@ -31,6 +31,7 @@ public partial class FlightManagementDbContext : DbContext
     public virtual DbSet<Flight> Flights { get; set; }
 
     public virtual DbSet<Passenger> Passengers { get; set; }
+    
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

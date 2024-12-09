@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Repositories
 {
     public class AirrlineRepository : IAirlineRepository
@@ -18,9 +19,46 @@ namespace Repositories
         }
         public void DeleteAirline(Airline airline)
         {
-            _context.Airlines.Remove(airline);
-            _context.SaveChanges();
+            try
+            {
+                // Step 1: Retrieve all flights involving the airline
+                var flights = _context.Flights
+                    .Where(f => f.AirlineId == airline.Id)
+                    .ToList();
+
+                // Step 2: Retrieve all bookings related to these flights
+                var flightIds = flights.Select(f => f.Id).ToList();
+                var bookings = _context.Bookings
+                    .Where(b => flightIds.Contains((int)b.FlightId))
+                    .ToList();
+
+                // Step 3: Delete baggage related to these bookings
+                var bookingIds = bookings.Select(b => b.Id).ToList();
+                var baggages = _context.Baggages
+                    .Where(bg => bookingIds.Contains((int)bg.BookingId))
+                    .ToList();
+                _context.Baggages.RemoveRange(baggages);
+
+                // Step 4: Delete bookings
+                _context.Bookings.RemoveRange(bookings);
+
+                // Step 5: Delete flights
+                _context.Flights.RemoveRange(flights);
+
+                // Step 6: Delete the airline
+                _context.Airlines.Remove(airline);
+
+                // Commit the changes
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                // Log the error for debugging purposes
+                Console.WriteLine($"Error deleting airline and dependencies: {ex.InnerException?.Message ?? ex.Message}");
+                throw;
+            }
         }
+
 
         public Airline? GetAirlinebyId(int id)
         {

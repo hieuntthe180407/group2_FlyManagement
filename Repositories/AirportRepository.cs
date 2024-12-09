@@ -17,9 +17,23 @@ namespace Repositories
         }
         public void DeleteAirport(Airport airport)
         {
+            // Remove related data first (e.g., flights, bookings, etc.)
+            var relatedFlights = _context.Flights.Where(f => f.ArrivingAirport == airport.Id || f.DepartingAirport == airport.Id);
+            _context.Flights.RemoveRange(relatedFlights);
+
+            var relatedBookings = _context.Bookings.Where(b => b.Flight.ArrivingAirport == airport.Id || b.Flight.DepartingAirport == airport.Id);
+            _context.Bookings.RemoveRange(relatedBookings);
+
+            var relatedBaggage = _context.Baggages.Where(b => b.Booking.Flight.ArrivingAirport == airport.Id || b.Booking.Flight.DepartingAirport == airport.Id);
+            _context.Baggages.RemoveRange(relatedBaggage);
+
+            // Finally, remove the airport itself
             _context.Airports.Remove(airport);
+
+            // Save changes to the database
             _context.SaveChanges();
         }
+
 
         public Airport? GetAirportbyId(int id)
         {

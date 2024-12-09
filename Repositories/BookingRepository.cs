@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataAccess;
+using Microsoft.EntityFrameworkCore;
 
 namespace Repositories
 {
@@ -29,13 +30,39 @@ namespace Repositories
 
         public void removeBooking(Booking booking)
         {
-            var existingBooking = dbContext.Bookings.Find(booking.Id);
+            var existingBooking = dbContext.Bookings
+                                           .Include(b => b.Baggages)  // Include related baggage entities
+                                           .Include(b => b.Passenger) // Include related passenger (if necessary)
+                                           .Include(b => b.Flight)    // Include related flight (if necessary)
+                                           .FirstOrDefault(b => b.Id == booking.Id);
+
             if (existingBooking != null)
             {
+                // Remove related baggage if any
+                if (existingBooking.Baggages != null && existingBooking.Baggages.Count > 0)
+                {
+                    dbContext.Baggages.RemoveRange(existingBooking.Baggages);
+                }
+
+                // Optionally, remove related passenger and flight if needed
+                if (existingBooking.Passenger != null)
+                {
+                    dbContext.Passengers.Remove(existingBooking.Passenger);
+                }
+
+                if (existingBooking.Flight != null)
+                {
+                    dbContext.Flights.Remove(existingBooking.Flight);
+                }
+
+                // Remove the booking itself
                 dbContext.Bookings.Remove(existingBooking);
+
+                // Save all changes
                 dbContext.SaveChanges();
             }
         }
+
 
         public void updateBooking(Booking booking)
         {
