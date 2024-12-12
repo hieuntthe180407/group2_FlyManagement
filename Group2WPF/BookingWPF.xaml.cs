@@ -137,20 +137,16 @@ namespace Group2WPF
         {
             try
             {
-                if (_bookingService.getBookingById(Int32.Parse(txtId.Text)) != null)
+                Booking booking = new Booking
                 {
-                    MessageBox.Show("Code existed!", "ERROR");
-                }
-                else
-                {
-                    Booking booking = new Booking();
-                    booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
-                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
-                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
-                    booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
-                    _bookingService.addBooking(booking);
-                }
+                    PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString()),
+                    FlightId = Int32.Parse(cboFlight.SelectedValue.ToString()),
+                    BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString()),
+                    BookingTime = DateTime.Parse(txtBookingTime.Text)
+                };
+
+              
+                _bookingService.addBooking(booking);
             }
             catch (Exception ex)
             {
@@ -162,6 +158,7 @@ namespace Group2WPF
                 ResetInput();
             }
         }
+
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
