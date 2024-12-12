@@ -31,52 +31,67 @@ namespace Group2WPF
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            // Lấy danh sách BookingPlatform hiện tại
-            List<BookingPlatform> existingPlatforms = _bookingPlatformService.GetAllBookingPlatforms();
-
-            // Tìm ID lớn nhất
-            int nextId = existingPlatforms.Count > 0 ? existingPlatforms.Max(bp => bp.Id) + 1 : 1;
-
-            // Tạo đối tượng mới với ID tự động
-            BookingPlatform newBookingPlatform = new BookingPlatform
+            var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
             {
-                Id = nextId,
-                Name = NameTextBox.Text,
-                Url = UrlTextBox.Text
-            };
+                // Lấy danh sách BookingPlatform hiện tại
+                List<BookingPlatform> existingPlatforms = _bookingPlatformService.GetAllBookingPlatforms();
 
-            // Thêm đối tượng vào hệ thống
-            _bookingPlatformService.AddBookingPlatform(newBookingPlatform);
-            LoadData();
-            ResetFields();
-        }
+                // Tìm ID lớn nhất
+                int nextId = existingPlatforms.Count > 0 ? existingPlatforms.Max(bp => bp.Id) + 1 : 1;
 
-
-        private void EditButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (DataGrid.SelectedItem != null && DataGrid.SelectedItem is BookingPlatform selectedBookingPlatform)
-            {
-                if (selectedBookingPlatform.Id != int.Parse(IdTextBox.Text) && _bookingPlatformService.GetBookingPlatformById(int.Parse(IdTextBox.Text)) != null)
+                // Tạo đối tượng mới với ID tự động
+                BookingPlatform newBookingPlatform = new BookingPlatform
                 {
-                    MessageBox.Show("Duplicate ID. Please enter a unique ID.");
-                    return;
-                }
+                    Id = nextId,
+                    Name = NameTextBox.Text,
+                    Url = UrlTextBox.Text
+                };
 
-                selectedBookingPlatform.Name = NameTextBox.Text;
-                selectedBookingPlatform.Url = UrlTextBox.Text;
-
-                _bookingPlatformService.UpdateBookingPlatform(selectedBookingPlatform);
+                // Thêm đối tượng vào hệ thống
+                _bookingPlatformService.AddBookingPlatform(newBookingPlatform);
+                MessageBox.Show("Create successfully");
                 LoadData();
                 ResetFields();
             }
         }
 
+
+        private void EditButton_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Are you sure you want to Update this airline?", "Confirm update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                if (DataGrid.SelectedItem != null && DataGrid.SelectedItem is BookingPlatform selectedBookingPlatform)
+                {
+                    if (selectedBookingPlatform.Id != int.Parse(IdTextBox.Text) && _bookingPlatformService.GetBookingPlatformById(int.Parse(IdTextBox.Text)) != null)
+                    {
+                        MessageBox.Show("Duplicate ID. Please enter a unique ID.");
+                        return;
+                    }
+
+                    selectedBookingPlatform.Name = NameTextBox.Text;
+                    selectedBookingPlatform.Url = UrlTextBox.Text;
+
+                    _bookingPlatformService.UpdateBookingPlatform(selectedBookingPlatform);
+                    MessageBox.Show("Update successfully");
+                    LoadData();
+                    ResetFields();
+                }
+            }
+        }
+
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            if (DataGrid.SelectedItem != null && DataGrid.SelectedItem is BookingPlatform selectedBookingPlatform)
+            var result = MessageBox.Show("Are you sure you want to delete this airline?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
             {
-                _bookingPlatformService.DeleteBookingPlatform(selectedBookingPlatform.Id);
-                LoadData();
+                if (DataGrid.SelectedItem != null && DataGrid.SelectedItem is BookingPlatform selectedBookingPlatform)
+                {
+                    _bookingPlatformService.DeleteBookingPlatform(selectedBookingPlatform.Id);
+                    MessageBox.Show("Delete successfully");
+                    LoadData();
+                }
             }
         }
 
