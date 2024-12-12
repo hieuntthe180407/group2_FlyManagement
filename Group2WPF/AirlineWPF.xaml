@@ -90,11 +90,12 @@
                 <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
             </Style>
         </Grid.Resources>
-
+        <Button Content="Back" Width="60" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Click="BackButton_Click"/>
         <!-- Title -->
         <Label Content="Airline Management" HorizontalAlignment="Left" VerticalAlignment="Top"
                FontSize="24" Grid.ColumnSpan="2" Height="42" Width="226"
                Margin="377,7,0,0"/>
+        
         <!-- Input Controls -->
         <StackPanel Grid.Row="0" Margin="11,114,391,1" Grid.ColumnSpan="2">
             <Grid>
@@ -149,5 +150,6 @@
             <Label Content="Filter by Name "  Height="27"/>
             <TextBox x:Name="txtFilterName" Width="100" VerticalAlignment="Center" Margin="5,5,0,5" TextChanged="txtFilterName_TextChanged"/>
         </StackPanel>
+        
     </Grid>
 </Window>

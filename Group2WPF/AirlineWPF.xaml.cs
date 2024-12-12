@@ -369,5 +369,12 @@ namespace Group2WPF
 
             return airlinesList;
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

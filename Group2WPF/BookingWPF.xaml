@@ -9,6 +9,7 @@
         WindowStartupLocation="CenterScreen"
         Title="BookingWPF" Height="600" Width="900">
     <Grid>
+        <Button Content="Back" Width="60" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Click="BackButton_Click"/>
         <DataGrid Name="dgData" Margin="229,203,29,95" SelectionChanged="dgData_SelectionChanged"/>
         <TextBox Name="txtId" HorizontalAlignment="Left" Margin="229,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642" IsReadOnly="True"/>
         <Label Content="Booking ID" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="78" Height="26"/>

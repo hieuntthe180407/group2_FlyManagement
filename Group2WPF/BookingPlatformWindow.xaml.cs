@@ -114,6 +114,11 @@ namespace Group2WPF
         {
             this.Close();
         }
-
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 mainWindow = new Window1();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

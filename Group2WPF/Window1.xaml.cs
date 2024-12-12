@@ -128,31 +128,38 @@ namespace Group2WPF
         private void ListViewItem_Selected_1(object sender, RoutedEventArgs e)
         {
             PassengerWPF passengerWPF = new PassengerWPF();
-            passengerWPF.ShowDialog();
+            passengerWPF.Show();
+            this.Close();
         }
 
         private void ListViewItem_Selected_2(object sender, RoutedEventArgs e)
         {
             FlightWPF flightWPF = new FlightWPF();
-            flightWPF.ShowDialog();
+            flightWPF.Show();
+            this.Close();
         }
 
         private void ListViewItem_Selected_3(object sender, RoutedEventArgs e)
         {
             BaggageWindow baggageWindow = new BaggageWindow();
-            baggageWindow.ShowDialog();
+            baggageWindow.Show();
+            
+            this.Close();
+
         }
 
         private void ListViewItem_Selected_4(object sender, RoutedEventArgs e)
         {
             BookingPlatformWindow bookingPlatformWindow = new BookingPlatformWindow();
-            bookingPlatformWindow.ShowDialog();
+            bookingPlatformWindow.Show();
+            this.Close();
         }
 
         private void ListViewItem_Selected_5(object sender, RoutedEventArgs e)
         {
             BookingWPF bookingWindow = new BookingWPF();
-            bookingWindow.ShowDialog();
+            bookingWindow.Show();
+            this.Close();
         }
 
         private void ListViewItem_Selected_6(object sender, RoutedEventArgs e)

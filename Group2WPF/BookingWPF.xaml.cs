@@ -223,5 +223,11 @@ namespace Group2WPF
                 dgData.ItemsSource = _bookingService.filterByBookingTime(datePicker.Text);
             else getAllBooking();
         }
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 mainWindow = new Window1();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

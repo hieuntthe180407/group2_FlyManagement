@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         Title="FlightWPF" Height="700" Width="1000">
     <Grid>
-
+        <Button Content="Back" Width="60" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Click="BackButton_Click"/>
 
 
         <Label x:Name="lblFlightMana" Content="Flight Management" HorizontalAlignment="Left" Margin="342,10,0,0" VerticalAlignment="Top" FontSize="36"/>

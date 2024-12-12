@@ -95,14 +95,18 @@ namespace Group2WPF
 
         private void btnAirline_Click(object sender, RoutedEventArgs e)
         {
+			
 			AirlineWPF airline = new AirlineWPF();
-			airline.ShowDialog();
+			airline.Show();
+			this.Close();
         }
 
         private void btnAirport_Click(object sender, RoutedEventArgs e)
         {
+			
 			AirportWPF airport = new AirportWPF();
-			airport.ShowDialog();
+			airport.Show();
+			this.Close();
         }
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)
