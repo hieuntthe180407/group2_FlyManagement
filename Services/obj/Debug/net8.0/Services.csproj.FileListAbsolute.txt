@@ -70,3 +70,21 @@ C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.dll
 C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\refint\Services.dll
 C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\trong\Downloads\Fly\Services\obj\Debug\net8.0\ref\Services.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\Services.deps.json
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\Services.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\Services.pdb
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\DataAccess.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\Repositories.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\Repositories.pdb
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\DataAccess.pdb
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.sourcelink.json
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\refint\Services.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.pdb
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\ref\Services.dll

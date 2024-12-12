@@ -37,7 +37,7 @@ public partial class FlightManagementDbContext : DbContext
     {
 		var buider = new ConfigurationBuilder().
 	SetBasePath(Directory.GetCurrentDirectory())
-	.AddJsonFile("appsettings.josn", optional: true, reloadOnChange: true);
+	.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
 		IConfiguration configuration = buider.Build();
 		optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 	}
