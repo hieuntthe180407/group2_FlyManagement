@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Group2WPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD:Group2WPF/obj/Debug/net8.0-windows/Group2WPF_3ukn12nj_wpftmp.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94286ce50c20383b5e342c9b564e95dd7ed94c94")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2eeaaaa4933462cc0af5830b17a5bb5baa791acf")]
+>>>>>>> 63e096385d0306a62c1069742173900b76a3875e:Group2WPF/obj/Debug/net8.0-windows/Group2WPF.AssemblyInfo.cs
 [assembly: System.Reflection.AssemblyProductAttribute("Group2WPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Group2WPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
