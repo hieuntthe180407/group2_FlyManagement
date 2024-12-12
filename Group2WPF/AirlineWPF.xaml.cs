@@ -96,6 +96,7 @@ namespace Group2WPF
 
                     LoadAirlines(); // Reload data after update
                     ResetInput();
+
                 }
             }
             catch (Exception ex)

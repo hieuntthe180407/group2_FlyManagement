@@ -162,7 +162,8 @@ namespace Group2WPF
 							DateOfBirth = dob,
 						};
 						_passengerService.Update(p);
-						txtID.IsReadOnly = false;
+                        MessageBox.Show("Update successfully", "Success");
+                        txtID.IsReadOnly = false;
 						ResetInput();
 						txtFilterFNameOrLastName.Text = string.Empty;
 						dpFilterDOB.Text = string.Empty;
@@ -242,7 +243,8 @@ namespace Group2WPF
 					else
 					{
 						_passengerService.Delete(p);
-						txtID.IsReadOnly = false;
+                        MessageBox.Show("Delete successfully", "Success");
+                        txtID.IsReadOnly = false;
 						ResetInput();
 					}
 				}

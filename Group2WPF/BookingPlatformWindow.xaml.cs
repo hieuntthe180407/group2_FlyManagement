@@ -47,6 +47,7 @@ namespace Group2WPF
                 };
 
                 _bookingPlatformService.AddBookingPlatform(newBookingPlatform);
+                MessageBox.Show("Add successfully", "Success");
                 LoadData();
                 ResetFields();
             }
@@ -70,6 +71,7 @@ namespace Group2WPF
                 selectedBookingPlatform.Url = UrlTextBox.Text;
 
                 _bookingPlatformService.UpdateBookingPlatform(selectedBookingPlatform);
+                MessageBox.Show("Update successfully", "Success");
                 LoadData();
                 ResetFields();
             }
@@ -80,6 +82,7 @@ namespace Group2WPF
             if (DataGrid.SelectedItem != null && DataGrid.SelectedItem is BookingPlatform selectedBookingPlatform)
             {
                 _bookingPlatformService.DeleteBookingPlatform(selectedBookingPlatform.Id);
+                MessageBox.Show("Delete successfully", "Success");
                 LoadData();
             }
         }

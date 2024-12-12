@@ -116,6 +116,7 @@ namespace Group2WPF
                     booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
                     booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
                     _bookingService.updateBooking(booking);
+                    MessageBox.Show("Update successfully", "Success");
                 }
                 else
                 {
@@ -150,6 +151,7 @@ namespace Group2WPF
                     booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
                     booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
                     _bookingService.addBooking(booking);
+                    MessageBox.Show("Add successfully", "Success");
                 }
             }
             catch (Exception ex)
@@ -176,6 +178,7 @@ namespace Group2WPF
                     booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
                     booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
                     _bookingService.removeBooking(booking);
+                    MessageBox.Show("Delete successfully", "Success");
                 }
                 else
                 {

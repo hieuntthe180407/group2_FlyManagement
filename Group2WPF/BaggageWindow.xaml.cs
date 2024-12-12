@@ -116,6 +116,7 @@ namespace Group2WPF
                 };
 
                 _context.Baggages.Add(newBaggage);
+                MessageBox.Show("Add Successfully");
                 _context.SaveChanges();
                 LoadData();
                 ResetFields();
@@ -142,7 +143,8 @@ namespace Group2WPF
                 _selectedBaggage.Id = newId;
                 _selectedBaggage.BookingId = (int)BookingIdComboBox.SelectedValue;
                 _selectedBaggage.WeightInKg = decimal.Parse(WeightInKgTextBox.Text);
-
+                _context.Update(_selectedBaggage);
+                MessageBox.Show("Update successfully");
                 _context.SaveChanges();
                 LoadData();
                 ResetFields();
@@ -154,6 +156,7 @@ namespace Group2WPF
             if (_selectedBaggage != null)
             {
                 _context.Baggages.Remove(_selectedBaggage);
+                MessageBox.Show("Delete Successfully");
                 _context.SaveChanges();
                 LoadData();
                 ResetFields();

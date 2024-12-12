@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Services\\Services.csproj": {}
+    "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\DataAccess.csproj": {
+    "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\trong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\obj\\",
+        "projectPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Nhat Anh\\.nuget\\packages\\",
+        "outputPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\trong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nhat Anh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +27,6 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\trong\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -100,24 +99,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Repositories\\Repositories.csproj": {
+    "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\trong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Repositories\\obj\\",
+        "projectPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\Nhat Anh\\.nuget\\packages\\",
+        "outputPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\trong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nhat Anh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -127,15 +126,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\trong\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\DataAccess\\DataAccess.csproj"
+              "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -170,24 +168,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Services\\Services.csproj": {
+    "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Services\\Services.csproj",
+        "projectUniqueName": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Services\\Services.csproj",
-        "packagesPath": "C:\\Users\\trong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Services\\obj\\",
+        "projectPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Nhat Anh\\.nuget\\packages\\",
+        "outputPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\trong\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nhat Anh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -197,15 +195,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\trong\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\trong\\Documents\\GitHub\\group2_FlyManagement\\Repositories\\Repositories.csproj"
+              "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Repositories\\Repositories.csproj": {
+                "projectPath": "D:\\C#BL5SU24\\Project_FinalC#\\group2_FlyManagement\\Repositories\\Repositories.csproj"
               }
             }
           }
@@ -240,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

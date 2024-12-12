@@ -82,6 +82,7 @@ namespace Group2WPF
                 flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
                 flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
                 iFlightService.InsertFlight(flight);
+                MessageBox.Show("Create successfully", "Success");
             }
             catch (Exception ex)
             {
@@ -109,6 +110,7 @@ namespace Group2WPF
                     flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
                     flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
                     iFlightService.UpdateFlight(flight);
+                    MessageBox.Show("Update successfully", "Success");
                 }
                 else
                 {
@@ -141,6 +143,7 @@ namespace Group2WPF
                     flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
                     flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
                     iFlightService.DeleteFlight(flight);
+                    MessageBox.Show("Delete successfully", "Success");
                 }
                 else
                 {
