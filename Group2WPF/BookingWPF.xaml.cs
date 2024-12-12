@@ -78,8 +78,8 @@ namespace Group2WPF
                 if (!bookingId.Equals(""))
                 {
                     Booking booking = _bookingService.getBookingById(Int32.Parse(bookingId));
-                    txtId.IsReadOnly = true;
-                    txtId.Text = booking.Id.ToString();
+                    txtId.IsReadOnly = true;  
+                    txtId.Text = booking.Id.ToString();  
                     cboBookingPlatform.SelectedValue = booking.BookingPlatformId;
                     cboPassenger.SelectedValue = booking.PassengerId;
                     cboFlight.SelectedValue = booking.FlightId;
@@ -88,6 +88,7 @@ namespace Group2WPF
             }
         }
 
+
         private void ButtonClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();;
@@ -95,13 +96,14 @@ namespace Group2WPF
 
         private void ResetInput()
         {
-            txtId.Text = "";
-            txtId.IsReadOnly = false;
+            txtId.Text = "";  // Không cho phép nhập ID, chỉ hiển thị.
+            txtId.IsReadOnly = true;  
             cboPassenger.SelectedValue = null;
             cboFlight.SelectedValue = null;
             cboBookingPlatform.SelectedValue = null;
             txtBookingTime.Text = "";
         }
+
 
         private void ButtonUpdate_Click(object sender, RoutedEventArgs e)
         {
@@ -137,20 +139,22 @@ namespace Group2WPF
         {
             try
             {
-                if (_bookingService.getBookingById(Int32.Parse(txtId.Text)) != null)
+                // Lấy ID lớn nhất hiện tại từ cơ sở dữ liệu
+                var maxId = _bookingService.getAll().Max(b => b.Id);
+
+                // Tạo đối tượng Booking mới với ID lớn nhất + 1
+                Booking booking = new Booking
                 {
-                    MessageBox.Show("Code existed!", "ERROR");
-                }
-                else
-                {
-                    Booking booking = new Booking();
-                    booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
-                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
-                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
-                    booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
-                    _bookingService.addBooking(booking);
-                }
+                    Id = maxId + 1,  // Tự động tăng ID
+                    PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString()),
+                    FlightId = Int32.Parse(cboFlight.SelectedValue.ToString()),
+                    BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString()),
+                    BookingTime = DateTime.Parse(txtBookingTime.Text)
+                };
+
+                _bookingService.addBooking(booking);
+
+                MessageBox.Show("Booking added successfully", "Success");
             }
             catch (Exception ex)
             {
@@ -162,6 +166,7 @@ namespace Group2WPF
                 ResetInput();
             }
         }
+
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {

@@ -65,7 +65,7 @@
 
                 <!-- Form Section -->
                 <Label Content="ID:" Grid.Column="0" VerticalAlignment="Center" Margin="5,0,5,0" Height="26" Grid.Row="1"/>
-                <TextBox x:Name="txtairportId" Grid.Column="1" VerticalAlignment="Center" Margin="7,0,13,0" Height="18" Grid.Row="1"/>
+                <TextBox x:Name="txtairportId" Grid.Column="1" VerticalAlignment="Center" Margin="7,0,13,0" Height="18" Grid.Row="1" IsReadOnly="True"/>
                 <Label Content="Code:" Grid.Column="2" VerticalAlignment="Center" Margin="5,0,278,0" Height="26" Grid.Row="1"/>
                 <TextBox x:Name="txtairportCode" Grid.Column="2" VerticalAlignment="Center" Margin="73,0,210,0" Height="18" Grid.Row="1"/>
                 <Label Content="Name:" Grid.Column="2" VerticalAlignment="Center" Margin="235,0,106,0" Height="26" Grid.Row="1"/>
@@ -88,12 +88,14 @@
                 <TextBox x:Name="txtairportCity" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Margin="313,0,261,0" Height="18" Grid.ColumnSpan="3"/>
 
                 <!-- Button Section -->
-                <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,6" Width="450">
-                    <Button Content="Add" Click="Insert_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
-                    <Button Content="Update" Click="Update_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
-                    <Button Content="Delete" Click="Delete_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
-                    <Button Content="Reset" Click="Reset_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
-                    <Button Content="Close" Click="Close_Click" Width="80" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,6" Width="600">
+                    <Button Content="Add" Click="Insert_Click" Width="60" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Update" Click="Update_Click" Width="60" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Delete" Click="Delete_Click" Width="60" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Reset" Click="Reset_Click" Width="60" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Close" Click="Close_Click" Width="60" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Import" Click="ImportButton_Click" Width="60" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
+                    <Button Content="Export" Click="ExportButton_Click" Width="60" Margin="5" Style="{StaticResource DataGridButtonStyle}"/>
                 </StackPanel>
 
                 <!-- Filter Section -->

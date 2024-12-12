@@ -111,7 +111,7 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Text="ID" Margin="0,5,10,5" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
-                <TextBox x:Name="txtairlineid" Width="200" Margin="0,5,0,5" Grid.Row="0" Grid.Column="1"/>
+                <TextBox x:Name="txtairlineid" Width="200" Margin="0,5,0,5" Grid.Row="0" Grid.Column="1" IsReadOnly="True"/>
 
                 <TextBlock Text="Code" Margin="0,5,10,5" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
                 <TextBox x:Name="txtairlinecode" Width="200" Margin="0,5,0,5" Grid.Row="1" Grid.Column="1"/>
@@ -123,11 +123,13 @@
                 <TextBox x:Name="txtairlinecountry" Width="200" Margin="0,5,0,5" Grid.Row="3" Grid.Column="1"/>
 
                 <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-                    <Button Content="Add" Width="100" Margin="5" Click="AddAirlineButton_Click"/>
-                    <Button Content="Update" Width="100" Margin="5" Click="UpdateAirlineButton_Click"/>
-                    <Button Content="Delete" Width="100" Margin="5" Click="DeleteAirlineButton_Click"/>
-                    <Button Content="Reset" Width="100" Margin="5" Click="ResetButton_Click"/>
-                    <Button Content="Close" Width="100" Margin="5" Click="CloseButton_Click"/>
+                    <Button Content="Add" Width="60" Margin="5" Click="AddAirlineButton_Click"/>
+                    <Button Content="Update" Width="60" Margin="5" Click="UpdateAirlineButton_Click"/>
+                    <Button Content="Delete" Width="60" Margin="5" Click="DeleteAirlineButton_Click"/>
+                    <Button Content="Reset" Width="60" Margin="5" Click="ResetButton_Click"/>
+                    <Button Content="Close" Width="60" Margin="5" Click="CloseButton_Click"/>
+                    <Button Content="Export" Width="60" Margin="5" Click="ExportButton_Click"/>
+                    <Button Content="Import" Width="60" Margin="5" Click="ImportButton_Click"/>
                 </StackPanel>
             </Grid>
         </StackPanel>

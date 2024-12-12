@@ -56,7 +56,8 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="75,147,0,0"/>
+        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="75,147,0,0" IsReadOnly="True"/>
+
 
         <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,242,0,0" RenderTransformOrigin="0.592,0.218"/>
         <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="75,250,0,0"/>

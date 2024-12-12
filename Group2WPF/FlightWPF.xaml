@@ -15,7 +15,8 @@
         <Label x:Name="lblFlightMana" Content="Flight Management" HorizontalAlignment="Left" Margin="342,10,0,0" VerticalAlignment="Top" FontSize="36"/>
 
         <Label x:Name="lblFlightID" Content="Flight ID: " HorizontalAlignment="Left" Margin="137,69,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
-        <TextBox x:Name="txtFlightID" Text="" HorizontalAlignment="Left" Margin="325,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+        <TextBox x:Name="txtFlightID" Text="" HorizontalAlignment="Left" Margin="325,78,0,0" 
+         TextWrapping="Wrap" VerticalAlignment="Top" Width="185" IsReadOnly="True"/>
 
         <Label x:Name="lblAirlineID" Content="Airline ID: " HorizontalAlignment="Left" Margin="137,113,0,0" VerticalAlignment="Top" FontSize="20" IsEnabled="False" HorizontalContentAlignment="Center" Foreground="Black"/>
         <TextBox x:Name="txtAirlineID" Text="" HorizontalAlignment="Left" Margin="326,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>

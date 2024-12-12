@@ -50,7 +50,7 @@ namespace Group2WPF
 
 		private bool ValidateData()
 		{
-			if(txtID.Text.Length == 0 || txtFName.Text.Length == 0 ||
+			if(txtFName.Text.Length == 0 ||
 				txtLName.Text.Length == 0 || txtGmail.Text.Length == 0 ||
 				txtCountry.Text.Length == 0 || dpDOB.Text.Length == 0)
 			{
@@ -71,59 +71,54 @@ namespace Group2WPF
 			return true;
 		}
 
-		private void Insert_Click(object sender, RoutedEventArgs e)
-		{
-			try
-			{
-				if (ValidateData())
-				{
-					int id = Int32.Parse(txtID.Text);
-					string fname = txtFName.Text;
-					string lname = txtLName.Text;
-					string gmail = txtGmail.Text;
-					string country = txtCountry.Text;
-					string gender = "";
-					DateOnly dob = DateOnly.Parse(dpDOB.Text);
-					if (rbFemale.IsChecked == true)
-					{
-						gender = "Female";
-					}
-					else
-					{
-						gender = "Male";
-					}
-					Passenger? pp = _passengerService.Get(id);
-					if(pp != null)
-					{
-						MessageBox.Show("duplicate");
-						return;
-					}
-					Passenger p = new Passenger()
-					{
-						Id = id,
-						FirstName = fname,
-						LastName = lname,
-						Email = gmail,
-						Country = country,
-						Gender = gender,
-						DateOfBirth = dob,
-					};
-					_passengerService.Add(p);
-					LoadPassenger();
-				}
-				else
-				{
-					return;
-				}
-			}catch (Exception ex)
-			{
-				MessageBox.Show("Let check your ID, ID is duplicate", "Fail by duplicate id");
-			}
-			
-			//ResetInput();
-		}
+        private void Insert_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (ValidateData())
+                {
+                  
+                    var passengers = _passengerService.GetAll();
+                   
+                    int nextId = passengers.Count > 0 ? passengers.Max(p => p.Id) + 1 : 1;
 
-		private void Update_Click(object sender, RoutedEventArgs e)
+                    string fname = txtFName.Text;
+                    string lname = txtLName.Text;
+                    string gmail = txtGmail.Text;
+                    string country = txtCountry.Text;
+                    string gender = rbFemale.IsChecked == true ? "Female" : "Male";
+                    DateOnly dob = DateOnly.Parse(dpDOB.Text);
+
+                  
+                    Passenger newPassenger = new Passenger
+                    {
+                        Id = nextId,
+                        FirstName = fname,
+                        LastName = lname,
+                        Email = gmail,
+                        Country = country,
+                        Gender = gender,
+                        DateOfBirth = dob
+                    };
+
+                   
+                    _passengerService.Add(newPassenger);
+                    LoadPassenger();
+                    ResetInput();
+                }
+                else
+                {
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Insert failed: " + ex.Message, "Error");
+            }
+        }
+
+
+        private void Update_Click(object sender, RoutedEventArgs e)
 		{
 			try
 			{

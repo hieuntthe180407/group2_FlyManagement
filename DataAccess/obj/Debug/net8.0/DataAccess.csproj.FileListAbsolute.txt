@@ -58,3 +58,19 @@ C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 C:\Users\trong\Downloads\Fly\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\DataAccess\bin\Debug\net8.0\FlightManagementDbContext.cs

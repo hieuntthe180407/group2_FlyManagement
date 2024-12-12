@@ -73,7 +73,11 @@ namespace Group2WPF
             try
             {
                 Flight flight = new Flight();
-                flight.Id = Int32.Parse(txtFlightID.Text);
+
+              
+                var flights = iFlightService.GetFlights();
+                flight.Id = flights.Count > 0 ? flights.Max(f => f.Id) + 1 : 1;
+
                 flight.AirlineId = Int32.Parse(txtAirlineID.Text);
                 flight.DepartingAirport = Int32.Parse(txtDepartingAirport.Text);
                 flight.ArrivingAirport = Int32.Parse(txtArrivingAirport.Text);
@@ -81,7 +85,10 @@ namespace Group2WPF
                 flight.ArrivingGate = txtArrivingGate.Text;
                 flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
                 flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
+
                 iFlightService.InsertFlight(flight);
+
+                MessageBox.Show($"Flight created successfully with ID {flight.Id}");
             }
             catch (Exception ex)
             {
@@ -90,8 +97,10 @@ namespace Group2WPF
             finally
             {
                 LoadFlights();
+                ResetInput();
             }
         }
+
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
