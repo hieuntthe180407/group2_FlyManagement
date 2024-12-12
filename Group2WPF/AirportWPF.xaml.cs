@@ -76,30 +76,33 @@ namespace Group2WPF
         {
             try
             {
-                if (ValidateData())
-                {
-                    // Lấy ID lớn nhất hiện tại từ cơ sở dữ liệu
-                    var maxId = _airportService.GetAirports().Max(a => a.Id);
-
-                    // Tạo đối tượng Airport mới với ID lớn nhất + 1
-                    var newAirport = new Airport
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes) {
+                    if (ValidateData())
                     {
-                        Id = maxId + 1,  // Tự động tăng ID
-                        Code = txtairportCode.Text,
-                        Name = txtairportName.Text,
-                        Country = txtairportCountry.Text,
-                        State = txtairportState.Text,
-                        City = txtairportCity.Text
-                    };
+                        // Lấy ID lớn nhất hiện tại từ cơ sở dữ liệu
+                        var maxId = _airportService.GetAirports().Max(a => a.Id);
 
-                    // Thêm mới vào cơ sở dữ liệu
-                    _airportService.InsertAirport(newAirport);
+                        // Tạo đối tượng Airport mới với ID lớn nhất + 1
+                        var newAirport = new Airport
+                        {
+                            Id = maxId + 1,  // Tự động tăng ID
+                            Code = txtairportCode.Text,
+                            Name = txtairportName.Text,
+                            Country = txtairportCountry.Text,
+                            State = txtairportState.Text,
+                            City = txtairportCity.Text
+                        };
 
-                    MessageBox.Show("Airport added successfully", "Success");
+                        // Thêm mới vào cơ sở dữ liệu
+                        _airportService.InsertAirport(newAirport);
 
-                    // Tải lại dữ liệu
-                    LoadAirport();
-                    ResetInput();
+                        MessageBox.Show("Airport added successfully", "Success");
+
+                        // Tải lại dữ liệu
+                        LoadAirport();
+                        ResetInput();
+                    }
                 }
             }
             catch (Exception ex)
@@ -112,27 +115,30 @@ namespace Group2WPF
         {
             try
             {
-                if (ValidateData())
-                {
-                    int id = Int32.Parse(txtairportId.Text);
-                    Airport existingAirport = _airportService.GetAirportById(id);
-                    if (existingAirport == null)
+                var result = MessageBox.Show("Are you sure you want to Update this airline?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes) {
+                    if (ValidateData())
                     {
-                        MessageBox.Show("Airport not found", "Error");
-                        return;
+                        int id = Int32.Parse(txtairportId.Text);
+                        Airport existingAirport = _airportService.GetAirportById(id);
+                        if (existingAirport == null)
+                        {
+                            MessageBox.Show("Airport not found", "Error");
+                            return;
+                        }
+
+                        existingAirport.Code = txtairportCode.Text;
+                        existingAirport.Name = txtairportName.Text;
+                        existingAirport.Country = txtairportCountry.Text;
+                        existingAirport.State = txtairportState.Text;
+                        existingAirport.City = txtairportCity.Text;
+
+                        _airportService.UpdateAirport(existingAirport);
+                        MessageBox.Show("Airport updated successfully", "Success");
+
+                        LoadAirport();
+                        ResetInput();
                     }
-
-                    existingAirport.Code = txtairportCode.Text;
-                    existingAirport.Name = txtairportName.Text;
-                    existingAirport.Country = txtairportCountry.Text;
-                    existingAirport.State = txtairportState.Text;
-                    existingAirport.City = txtairportCity.Text;
-
-                    _airportService.UpdateAirport(existingAirport);
-                    MessageBox.Show("Airport updated successfully", "Success");
-
-                    LoadAirport();
-                    ResetInput();
                 }
             }
             catch (Exception ex)
@@ -145,17 +151,21 @@ namespace Group2WPF
         {
             try
             {
-                int id = Int32.Parse(txtairportId.Text);
-                Airport existingAirport = _airportService.GetAirportById(id);
-                if (existingAirport == null)
+                var result = MessageBox.Show("Are you sure you want to Delete this airline?", "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    MessageBox.Show("Airport not found", "Error");
-                    return;
+                    int id = Int32.Parse(txtairportId.Text);
+                    Airport existingAirport = _airportService.GetAirportById(id);
+                    if (existingAirport == null)
+                    {
+                        MessageBox.Show("Airport not found", "Error");
+                        return;
+                    }
+                    _airportService.DeleteAirport(existingAirport);
+                    MessageBox.Show("Airport deleted successfully", "Success");
+                    LoadAirport();
+                    ResetInput();
                 }
-                _airportService.DeleteAirport(existingAirport);
-                MessageBox.Show("Airport deleted successfully", "Success");
-                LoadAirport();
-                ResetInput();
             }
             catch (Exception ex)
             {

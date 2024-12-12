@@ -75,36 +75,41 @@ namespace Group2WPF
         {
             try
             {
-                if (ValidateData())
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                  
-                    var passengers = _passengerService.GetAll();
-                   
-                    int nextId = passengers.Count > 0 ? passengers.Max(p => p.Id) + 1 : 1;
+					if (ValidateData())
+					{
 
-                    string fname = txtFName.Text;
-                    string lname = txtLName.Text;
-                    string gmail = txtGmail.Text;
-                    string country = txtCountry.Text;
-                    string gender = rbFemale.IsChecked == true ? "Female" : "Male";
-                    DateOnly dob = DateOnly.Parse(dpDOB.Text);
+						var passengers = _passengerService.GetAll();
 
-                  
-                    Passenger newPassenger = new Passenger
-                    {
-                        Id = nextId,
-                        FirstName = fname,
-                        LastName = lname,
-                        Email = gmail,
-                        Country = country,
-                        Gender = gender,
-                        DateOfBirth = dob
-                    };
+						int nextId = passengers.Count > 0 ? passengers.Max(p => p.Id) + 1 : 1;
 
-                   
-                    _passengerService.Add(newPassenger);
-                    LoadPassenger();
-                    ResetInput();
+						string fname = txtFName.Text;
+						string lname = txtLName.Text;
+						string gmail = txtGmail.Text;
+						string country = txtCountry.Text;
+						string gender = rbFemale.IsChecked == true ? "Female" : "Male";
+						DateOnly dob = DateOnly.Parse(dpDOB.Text);
+
+
+						Passenger newPassenger = new Passenger
+						{
+							Id = nextId,
+							FirstName = fname,
+							LastName = lname,
+							Email = gmail,
+							Country = country,
+							Gender = gender,
+							DateOfBirth = dob
+						};
+
+
+						_passengerService.Add(newPassenger);
+						MessageBox.Show("add successfully");
+						LoadPassenger();
+						ResetInput();
+					}
                 }
                 else
                 {
@@ -121,46 +126,51 @@ namespace Group2WPF
         private void Update_Click(object sender, RoutedEventArgs e)
 		{
 			try
-			{
-				if (ValidateData())
-				{
-					int id = Int32.Parse(txtID.Text);
-					Passenger? p = _passengerService.Get(id);
-					if (p == null)
+            {
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+					if (ValidateData())
 					{
-						MessageBox.Show("Not found passenger", "Fail!");
-					}
-					else
-					{
-						string fname = txtFName.Text;
-						string lname = txtLName.Text;
-						string gmail = txtGmail.Text;
-						string country = txtCountry.Text;
-						string gender = "";
-						DateOnly dob = DateOnly.Parse(dpDOB.Text);
-						if (rbFemale.IsChecked == true)
+						int id = Int32.Parse(txtID.Text);
+						Passenger? p = _passengerService.Get(id);
+						if (p == null)
 						{
-							gender = "Female";
+							MessageBox.Show("Not found passenger", "Fail!");
 						}
 						else
 						{
-							gender = "Male";
+							string fname = txtFName.Text;
+							string lname = txtLName.Text;
+							string gmail = txtGmail.Text;
+							string country = txtCountry.Text;
+							string gender = "";
+							DateOnly dob = DateOnly.Parse(dpDOB.Text);
+							if (rbFemale.IsChecked == true)
+							{
+								gender = "Female";
+							}
+							else
+							{
+								gender = "Male";
+							}
+							p = new Passenger()
+							{
+								Id = id,
+								FirstName = fname,
+								LastName = lname,
+								Email = gmail,
+								Country = country,
+								Gender = gender,
+								DateOfBirth = dob,
+							};
+							_passengerService.Update(p);
+							MessageBox.Show("update successfully");
+							txtID.IsReadOnly = false;
+							ResetInput();
+							txtFilterFNameOrLastName.Text = string.Empty;
+							dpFilterDOB.Text = string.Empty;
 						}
-						p = new Passenger()
-						{
-							Id = id,
-							FirstName = fname,
-							LastName = lname,
-							Email = gmail,
-							Country = country,
-							Gender = gender,
-							DateOfBirth = dob,
-						};
-						_passengerService.Update(p);
-						txtID.IsReadOnly = false;
-						ResetInput();
-						txtFilterFNameOrLastName.Text = string.Empty;
-						dpFilterDOB.Text = string.Empty;
 					}
 				}
 
@@ -225,20 +235,25 @@ namespace Group2WPF
 		private void Delete_Click(object sender, RoutedEventArgs e)
 		{
 			try
-			{
-				if (ValidateData())
-				{
-					int id = Int32.Parse(txtID.Text);
-					Passenger? p = _passengerService.Get(id);
-					if (p == null)
+            {
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+					if (ValidateData())
 					{
-						MessageBox.Show("Not found passenger", "Fail!");
-					}
-					else
-					{
-						_passengerService.Delete(p);
-						txtID.IsReadOnly = false;
-						ResetInput();
+						int id = Int32.Parse(txtID.Text);
+						Passenger? p = _passengerService.Get(id);
+						if (p == null)
+						{
+							MessageBox.Show("Not found passenger", "Fail!");
+						}
+						else
+						{
+							_passengerService.Delete(p);
+							MessageBox.Show("delete successfully");
+							txtID.IsReadOnly = false;
+							ResetInput();
+						}
 					}
 				}
 

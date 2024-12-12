@@ -1,2 +1,6 @@
 .vs/
 Group2WPF/appsettings.josn
+/bin/
+/obj/
+**/bin/
+**/obj/

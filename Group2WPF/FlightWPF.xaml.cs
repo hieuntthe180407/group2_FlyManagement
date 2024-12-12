@@ -72,23 +72,27 @@ namespace Group2WPF
         {
             try
             {
-                Flight flight = new Flight();
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+                    Flight flight = new Flight();
 
-              
-                var flights = iFlightService.GetFlights();
-                flight.Id = flights.Count > 0 ? flights.Max(f => f.Id) + 1 : 1;
 
-                flight.AirlineId = Int32.Parse(txtAirlineID.Text);
-                flight.DepartingAirport = Int32.Parse(txtDepartingAirport.Text);
-                flight.ArrivingAirport = Int32.Parse(txtArrivingAirport.Text);
-                flight.DepartingGate = txtDepartingGate.Text;
-                flight.ArrivingGate = txtArrivingGate.Text;
-                flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
-                flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
+                    var flights = iFlightService.GetFlights();
+                    flight.Id = flights.Count > 0 ? flights.Max(f => f.Id) + 1 : 1;
 
-                iFlightService.InsertFlight(flight);
+                    flight.AirlineId = Int32.Parse(txtAirlineID.Text);
+                    flight.DepartingAirport = Int32.Parse(txtDepartingAirport.Text);
+                    flight.ArrivingAirport = Int32.Parse(txtArrivingAirport.Text);
+                    flight.DepartingGate = txtDepartingGate.Text;
+                    flight.ArrivingGate = txtArrivingGate.Text;
+                    flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
+                    flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
 
-                MessageBox.Show($"Flight created successfully with ID {flight.Id}");
+                    iFlightService.InsertFlight(flight);
+
+                    MessageBox.Show($"Flight created successfully with ID {flight.Id}");
+                }
             }
             catch (Exception ex)
             {
@@ -106,18 +110,23 @@ namespace Group2WPF
         {
             try
             {
-                if (txtFlightID.Text.Length > 0)
+                var result = MessageBox.Show("Are you sure you want to update this airline?", "Confirm update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    Flight flight = new Flight();
-                    flight.Id = Int32.Parse(txtFlightID.Text);
-                    flight.AirlineId = Int32.Parse(txtAirlineID.Text);
-                    flight.DepartingAirport = Int32.Parse(txtDepartingAirport.Text);
-                    flight.ArrivingAirport = Int32.Parse(txtArrivingAirport.Text);
-                    flight.DepartingGate = txtDepartingGate.Text;
-                    flight.ArrivingGate = txtArrivingGate.Text;
-                    flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
-                    flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
-                    iFlightService.UpdateFlight(flight);
+                    if (txtFlightID.Text.Length > 0)
+                    {
+                        Flight flight = new Flight();
+                        flight.Id = Int32.Parse(txtFlightID.Text);
+                        flight.AirlineId = Int32.Parse(txtAirlineID.Text);
+                        flight.DepartingAirport = Int32.Parse(txtDepartingAirport.Text);
+                        flight.ArrivingAirport = Int32.Parse(txtArrivingAirport.Text);
+                        flight.DepartingGate = txtDepartingGate.Text;
+                        flight.ArrivingGate = txtArrivingGate.Text;
+                        flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
+                        flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
+                        iFlightService.UpdateFlight(flight);
+                        MessageBox.Show("Update successfully");
+                    }
                 }
                 else
                 {
@@ -138,18 +147,23 @@ namespace Group2WPF
         {
             try
             {
-                if (txtFlightID.Text.Length > 0)
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    Flight flight = new Flight();
-                    flight.Id = Int32.Parse(txtFlightID.Text);
-                    flight.AirlineId = Int32.Parse(txtAirlineID.Text);
-                    flight.DepartingAirport = Int32.Parse(txtDepartingAirport.Text);
-                    flight.ArrivingAirport = Int32.Parse(txtArrivingAirport.Text);
-                    flight.DepartingGate = txtDepartingGate.Text;
-                    flight.ArrivingGate = txtArrivingGate.Text;
-                    flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
-                    flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
-                    iFlightService.DeleteFlight(flight);
+                    if (txtFlightID.Text.Length > 0)
+                    {
+                        Flight flight = new Flight();
+                        flight.Id = Int32.Parse(txtFlightID.Text);
+                        flight.AirlineId = Int32.Parse(txtAirlineID.Text);
+                        flight.DepartingAirport = Int32.Parse(txtDepartingAirport.Text);
+                        flight.ArrivingAirport = Int32.Parse(txtArrivingAirport.Text);
+                        flight.DepartingGate = txtDepartingGate.Text;
+                        flight.ArrivingGate = txtArrivingGate.Text;
+                        flight.DepartureTime = dpDepartureTime.SelectedDate.HasValue ? dpDepartureTime.SelectedDate.Value : DateTime.Now;
+                        flight.ArrivalTime = dpArrivalTime.SelectedDate.HasValue ? dpArrivalTime.SelectedDate.Value : DateTime.Now;
+                        iFlightService.DeleteFlight(flight);
+                        MessageBox.Show("delete successfully");
+                    }
                 }
                 else
                 {

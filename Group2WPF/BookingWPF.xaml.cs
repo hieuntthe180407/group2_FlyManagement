@@ -109,15 +109,20 @@ namespace Group2WPF
         {
             try
             {
-                if (txtId.Text.Length > 0)
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    Booking booking = new Booking();
-                    booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
-                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
-                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
-                    booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
-                    _bookingService.updateBooking(booking);
+                    if (txtId.Text.Length > 0)
+                    {
+                        Booking booking = new Booking();
+                        booking.Id = Int32.Parse(txtId.Text);
+                        booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                        booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                        booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
+                        booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
+                        _bookingService.updateBooking(booking);
+                        MessageBox.Show("Update successfully");
+                    }
                 }
                 else
                 {
@@ -139,22 +144,26 @@ namespace Group2WPF
         {
             try
             {
-                // Lấy ID lớn nhất hiện tại từ cơ sở dữ liệu
-                var maxId = _bookingService.getAll().Max(b => b.Id);
-
-                // Tạo đối tượng Booking mới với ID lớn nhất + 1
-                Booking booking = new Booking
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    Id = maxId + 1,  // Tự động tăng ID
-                    PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString()),
-                    FlightId = Int32.Parse(cboFlight.SelectedValue.ToString()),
-                    BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString()),
-                    BookingTime = DateTime.Parse(txtBookingTime.Text)
-                };
+                    // Lấy ID lớn nhất hiện tại từ cơ sở dữ liệu
+                    var maxId = _bookingService.getAll().Max(b => b.Id);
 
-                _bookingService.addBooking(booking);
+                    // Tạo đối tượng Booking mới với ID lớn nhất + 1
+                    Booking booking = new Booking
+                    {
+                        Id = maxId + 1,  // Tự động tăng ID
+                        PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString()),
+                        FlightId = Int32.Parse(cboFlight.SelectedValue.ToString()),
+                        BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString()),
+                        BookingTime = DateTime.Parse(txtBookingTime.Text)
+                    };
 
-                MessageBox.Show("Booking added successfully", "Success");
+                    _bookingService.addBooking(booking);
+
+                    MessageBox.Show("Booking added successfully", "Success");
+                }
             }
             catch (Exception ex)
             {
@@ -172,15 +181,21 @@ namespace Group2WPF
         {
             try
             {
-                if (txtId.Text.Length > 0)
+                var result = MessageBox.Show("Are you sure you want to Delete this airline?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    Booking booking = new Booking();
-                    booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
-                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
-                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
-                    booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
-                    _bookingService.removeBooking(booking);
+
+                    if (txtId.Text.Length > 0)
+                    {
+                        Booking booking = new Booking();
+                        booking.Id = Int32.Parse(txtId.Text);
+                        booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                        booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                        booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
+                        booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
+                        _bookingService.removeBooking(booking);
+                        MessageBox.Show("Delete successfully");
+                    }
                 }
                 else
                 {
