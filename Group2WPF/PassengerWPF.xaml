@@ -8,6 +8,45 @@
         Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen"
         Title="PassengerWPF" Height="700" Width="1000">
+    <Window.Resources>
+        <!-- Style for Buttons -->
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="27" />
+            <Setter Property="Width" Value="70" />
+            <Setter Property="RenderTransformOrigin" Value="0.46,0.105" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+
+        <!-- Style for TextBoxes -->
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#FFD8C8C8" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+
+        <!-- Style for Labels -->
+        <Style TargetType="Label">
+            <Setter Property="Width" Value="96" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+
+        <!-- Style for RadioButtons -->
+        <Style TargetType="RadioButton">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+        </Style>
+
+        <!-- Style for DatePickers -->
+        <Style TargetType="DatePicker">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Width" Value="195" />
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <DataGrid SelectionChanged="dgPassenger_SelectionChanged" AutoGenerateColumns="False" Name="dgPassenger" Margin="244,263,87,110">
             <DataGrid.Columns>
@@ -20,33 +59,32 @@
                 <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Back" Width="60" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Click="BackButton_Click"/>
-        <Label x:Name="lblProductID" Content="Passenger ID" HorizontalAlignment="Left" Margin="151,76,0,0" VerticalAlignment="Top" Width="96"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Margin="151,119,0,0" VerticalAlignment="Top" Width="96"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Margin="151,151,0,0" VerticalAlignment="Top" Width="96"/>
-        <Label Content="Date Of Birth" HorizontalAlignment="Left" Margin="550,79,0,0" VerticalAlignment="Top" Width="96"/>
-        <Label Content="Country" HorizontalAlignment="Left" Margin="550,159,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.522,6.465"/>
-        <TextBox x:Name="txtID" IsReadOnly="True" HorizontalAlignment="Left" Margin="289,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
-        <TextBox x:Name="txtFName" HorizontalAlignment="Left" Margin="289,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
-        <TextBox x:Name="txtLName" HorizontalAlignment="Left" Margin="289,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
-        <TextBox x:Name="txtCountry" HorizontalAlignment="Left" Margin="676,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
-        <Label Content="Passenger Management" HorizontalAlignment="Center" Margin="0,7,0,0" VerticalAlignment="Top" Height="69" Width="412" FontSize="36"/>
-        <Label x:Name="lblProductID_Copy" Content="Gmail" HorizontalAlignment="Left" Margin="550,114,0,0" VerticalAlignment="Top" Width="96"/>
-        <Label Content="Gender" HorizontalAlignment="Left" Margin="151,198,0,0" VerticalAlignment="Top" Width="96"/>
-        <TextBox x:Name="txtGmail" IsReadOnly="False" HorizontalAlignment="Left" Margin="675,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
-        <DatePicker Name="dpDOB" HorizontalAlignment="Left" Margin="675,76,0,0" VerticalAlignment="Top" Width="195"/>
-        <RadioButton x:Name="rbMale" Content="Male" HorizontalAlignment="Left" Margin="289,204,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbFemale" Content="Female" HorizontalAlignment="Left" Margin="399,203,0,0" VerticalAlignment="Top"/>
-        <Button Name="Insert" Content="Insert" HorizontalAlignment="Left" Margin="294,610,0,0" VerticalAlignment="Top" Height="27" Width="70" Background="#FF5CD23C" Click="Insert_Click" RenderTransformOrigin="0.46,0.105"/>
-        <Button x:Name="Update" Content="Update" HorizontalAlignment="Left" Margin="430,610,0,0" VerticalAlignment="Top" Height="27" Width="70" Background="#FF25AAB9" Click="Update_Click" RenderTransformOrigin="0.46,0.105"/>
-        <Button x:Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="563,610,0,0" VerticalAlignment="Top" Height="27" Width="70" Background="#FFCE3030" Click="Delete_Click" RenderTransformOrigin="0.46,0.105"/>
-        <Button x:Name="Close" Content="Close" HorizontalAlignment="Left" Margin="801,610,0,0" VerticalAlignment="Top" Height="27" Width="70" Background="#FFE5561D" Click="Close_Click" RenderTransformOrigin="0.46,0.105"/>
-        <Label Content="Filter:" HorizontalAlignment="Left" Margin="52,263,0,0" VerticalAlignment="Top" Height="37" Width="87"/>
-        <Label Content="First Name or Last Name:" HorizontalAlignment="Left" Margin="52,300,0,0" VerticalAlignment="Top" Height="31" Width="147"/>
-        <TextBox Name="txtFilterFNameOrLastName" HorizontalAlignment="Left" Margin="52,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="164" Height="19" TextChanged="txtFilterFNameOrLastName_TextChanged"/>
-        <Label Content="Date Of Birth:" HorizontalAlignment="Left" Margin="52,383,0,0" VerticalAlignment="Top" Height="31" Width="147"/>
-        <DatePicker Name="dpFilterDOB" SelectedDateChanged="dpFilterDOB_SelectedDateChanged" HorizontalAlignment="Left" Margin="52,419,0,0" VerticalAlignment="Top" Width="164"/>
-        <Button x:Name="Reset" Content="Reset" HorizontalAlignment="Left" Margin="689,610,0,0" VerticalAlignment="Top" Height="27" Width="70" Background="#FF238618" Click="Reset_Click" RenderTransformOrigin="0.46,0.105"/>
-
+        <Button Content="Back" Margin="10,10,0,0" Click="BackButton_Click"/>
+        <Label x:Name="lblProductID" Content="Passenger ID" Margin="151,76,0,0"/>
+        <Label Content="First Name" Margin="151,119,0,0"/>
+        <Label Content="Last Name" Margin="151,151,0,0"/>
+        <Label Content="Date Of Birth" Margin="550,79,0,0"/>
+        <Label Content="Country" Margin="550,159,0,0"/>
+        <TextBox x:Name="txtID" IsReadOnly="True" Margin="289,80,0,0" Width="195" Text="" />
+        <TextBox x:Name="txtFName" Margin="289,119,0,0" Width="195" Text="" />
+        <TextBox x:Name="txtLName" Margin="289,159,0,0" Width="195" Text="" />
+        <TextBox x:Name="txtCountry" Margin="676,164,0,0" Width="195" Text="" />
+        <Label Content="Passenger Management" HorizontalAlignment="Center" Margin="0,7,0,0" Height="69" Width="412" FontSize="36"/>
+        <Label x:Name="lblProductID_Copy" Content="Gmail" Margin="550,114,0,0"/>
+        <Label Content="Gender" Margin="151,198,0,0"/>
+        <TextBox x:Name="txtGmail" Margin="675,120,0,0" Width="195" Text="" />
+        <DatePicker Name="dpDOB" Margin="675,76,0,0"/>
+        <RadioButton x:Name="rbMale" Content="Male" Margin="289,204,0,0"/>
+        <RadioButton x:Name="rbFemale" Content="Female" Margin="399,203,0,0"/>
+        <Button Name="Insert" Content="Insert" Margin="294,610,0,0" Background="#FF5CD23C" Click="Insert_Click" />
+        <Button x:Name="Update" Content="Update" Margin="430,610,0,0" Background="#FF25AAB9" Click="Update_Click" />
+        <Button x:Name="Delete" Content="Delete" Margin="563,610,0,0" Background="#FFCE3030" Click="Delete_Click" />
+        <Button x:Name="Close" Content="Close" Margin="801,610,0,0" Background="#FFE5561D" Click="Close_Click" />
+        <Label Content="Filter:" Margin="52,263,0,0" Height="37"/>
+        <Label Content="First Name or Last Name:" Margin="52,300,0,0" Height="31" />
+        <TextBox Name="txtFilterFNameOrLastName" Margin="52,336,0,0" Width="164" Height="19" TextChanged="txtFilterFNameOrLastName_TextChanged"/>
+        <Label Content="Date Of Birth:" Margin="52,383,0,0" Height="31"/>
+        <DatePicker Name="dpFilterDOB" SelectedDateChanged="dpFilterDOB_SelectedDateChanged" Margin="52,419,0,0"/>
+        <Button x:Name="Reset" Content="Reset" Margin="689,610,0,0" Background="#FF238618" Click="Reset_Click" />
     </Grid>
 </Window>
