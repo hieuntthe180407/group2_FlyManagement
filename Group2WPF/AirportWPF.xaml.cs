@@ -62,7 +62,7 @@ namespace Group2WPF
 
         private bool ValidateData()
         {
-            if (string.IsNullOrEmpty(txtairportId.Text) || string.IsNullOrEmpty(txtairportCode.Text) ||
+            if ( string.IsNullOrEmpty(txtairportCode.Text) ||
                 string.IsNullOrEmpty(txtairportName.Text) || string.IsNullOrEmpty(txtairportCountry.Text) ||
                 string.IsNullOrEmpty(txtairportState.Text) || string.IsNullOrEmpty(txtairportCity.Text))
             {
@@ -78,16 +78,13 @@ namespace Group2WPF
             {
                 if (ValidateData())
                 {
-                    int id;
-                    if (!int.TryParse(txtairportId.Text, out id))
-                    {
-                        MessageBox.Show("Invalid ID format!", "Validation Error");
-                        return;
-                    }
+                    // Lấy ID lớn nhất hiện tại từ cơ sở dữ liệu
+                    var maxId = _airportService.GetAirports().Max(a => a.Id);
 
-                    Airport newAirport = new Airport
+                    // Tạo đối tượng Airport mới với ID lớn nhất + 1
+                    var newAirport = new Airport
                     {
-                        Id = id, // Set the id manually
+                        Id = maxId + 1,  // Tự động tăng ID
                         Code = txtairportCode.Text,
                         Name = txtairportName.Text,
                         Country = txtairportCountry.Text,
@@ -95,15 +92,19 @@ namespace Group2WPF
                         City = txtairportCity.Text
                     };
 
+                    // Thêm mới vào cơ sở dữ liệu
                     _airportService.InsertAirport(newAirport);
+
                     MessageBox.Show("Airport added successfully", "Success");
+
+                    // Tải lại dữ liệu
                     LoadAirport();
                     ResetInput();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error adding airport: " + ex.Message, "Error");
+                MessageBox.Show("Error adding airport: " + ex.Message, "Addition Failed");
             }
         }
 

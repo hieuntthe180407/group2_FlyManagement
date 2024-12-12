@@ -63,7 +63,7 @@ namespace Group2WPF
 
         private bool ValidateData()
         {
-            if (string.IsNullOrWhiteSpace(txtairlineid.Text) || string.IsNullOrWhiteSpace(txtairlinename.Text) ||
+            if ( string.IsNullOrWhiteSpace(txtairlinename.Text) ||
                 string.IsNullOrWhiteSpace(txtairlinecode.Text) || string.IsNullOrWhiteSpace(txtairlinecountry.Text))
             {
                 MessageBox.Show("Please enter all information!", "Validation Error");
@@ -114,31 +114,25 @@ namespace Group2WPF
             {
                 if (ValidateData())
                 {
-                    if (!int.TryParse(txtairlineid.Text, out int id))
-                    {
-                        MessageBox.Show("Please enter a valid numeric ID", "Invalid Input");
-                        return;
-                    }
+                    
+                    var maxId = _airlineService.GetAirlines().Max(a => a.Id);
 
-                    var existingAirline = _airlineService.GetAirlinebyId(id);
-                    if (existingAirline != null)
-                    {
-                        MessageBox.Show("Airline with this ID already exists", "Error");
-                        return;
-                    }
-
+                    
                     var newAirline = new Airline
                     {
-                        Id = id,
+                        Id = maxId + 1, 
                         Code = txtairlinecode.Text,
                         Name = txtairlinename.Text,
                         Country = txtairlinecountry.Text
                     };
 
+                   
                     _airlineService.InsertAirline(newAirline);
+
                     MessageBox.Show("Airline added successfully", "Success");
 
-                    LoadAirlines(); // Reload data after insert
+                    // Tải lại dữ liệu
+                    LoadAirlines();
                     ResetInput();
                 }
             }
@@ -147,6 +141,7 @@ namespace Group2WPF
                 MessageBox.Show("Error adding airline: " + ex.Message, "Addition Failed");
             }
         }
+
 
         private void DeleteAirlineButton_Click(object sender, RoutedEventArgs e)
         {

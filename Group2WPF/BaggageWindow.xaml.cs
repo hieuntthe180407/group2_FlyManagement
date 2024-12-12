@@ -99,30 +99,31 @@ namespace Group2WPF
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(IdTextBox.Text, out int id))
+            try
             {
-                // Check for duplicate ID
-                if (_context.Baggages.Any(b => b.Id == id))
-                {
-                    MessageBox.Show("Duplicate ID. Please enter a unique ID.");
-                    return;
-                }
+               
+                var maxId = _context.Baggages.Max(b => b.Id);
 
                 var newBaggage = new Baggage
                 {
-                    Id = id,
+                    Id = maxId + 1,  
                     BookingId = (int)BookingIdComboBox.SelectedValue,
                     WeightInKg = decimal.Parse(WeightInKgTextBox.Text)
                 };
 
+              
                 _context.Baggages.Add(newBaggage);
                 _context.SaveChanges();
+
+              
                 LoadData();
+
+               
                 ResetFields();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid ID. Please enter a valid numeric ID.");
+                MessageBox.Show($"Error adding baggage: {ex.Message}");
             }
         }
 

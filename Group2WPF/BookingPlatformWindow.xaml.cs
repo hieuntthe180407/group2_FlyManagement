@@ -31,30 +31,26 @@ namespace Group2WPF
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(IdTextBox.Text, out int id))
-            {
-                if (_bookingPlatformService.GetBookingPlatformById(id) != null)
-                {
-                    MessageBox.Show("Duplicate ID. Please enter a unique ID.");
-                    return;
-                }
+            // Lấy danh sách BookingPlatform hiện tại
+            List<BookingPlatform> existingPlatforms = _bookingPlatformService.GetAllBookingPlatforms();
 
-                BookingPlatform newBookingPlatform = new BookingPlatform
-                {
-                    Id = id,
-                    Name = NameTextBox.Text,
-                    Url = UrlTextBox.Text
-                };
+            // Tìm ID lớn nhất
+            int nextId = existingPlatforms.Count > 0 ? existingPlatforms.Max(bp => bp.Id) + 1 : 1;
 
-                _bookingPlatformService.AddBookingPlatform(newBookingPlatform);
-                LoadData();
-                ResetFields();
-            }
-            else
+            // Tạo đối tượng mới với ID tự động
+            BookingPlatform newBookingPlatform = new BookingPlatform
             {
-                MessageBox.Show("Invalid ID. Please enter a valid numeric ID.");
-            }
+                Id = nextId,
+                Name = NameTextBox.Text,
+                Url = UrlTextBox.Text
+            };
+
+            // Thêm đối tượng vào hệ thống
+            _bookingPlatformService.AddBookingPlatform(newBookingPlatform);
+            LoadData();
+            ResetFields();
         }
+
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {

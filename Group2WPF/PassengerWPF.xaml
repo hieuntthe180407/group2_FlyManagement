@@ -25,7 +25,7 @@
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="151,151,0,0" VerticalAlignment="Top" Width="96"/>
         <Label Content="Date Of Birth" HorizontalAlignment="Left" Margin="550,79,0,0" VerticalAlignment="Top" Width="96"/>
         <Label Content="Country" HorizontalAlignment="Left" Margin="550,159,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.522,6.465"/>
-        <TextBox x:Name="txtID" IsReadOnly="False" HorizontalAlignment="Left" Margin="289,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
+        <TextBox x:Name="txtID" IsReadOnly="True" HorizontalAlignment="Left" Margin="289,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
         <TextBox x:Name="txtFName" HorizontalAlignment="Left" Margin="289,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
         <TextBox x:Name="txtLName" HorizontalAlignment="Left" Margin="289,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />
         <TextBox x:Name="txtCountry" HorizontalAlignment="Left" Margin="676,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" Background="#FFD8C8C8" Text="" />

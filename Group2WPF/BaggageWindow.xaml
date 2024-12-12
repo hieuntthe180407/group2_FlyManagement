@@ -74,7 +74,8 @@
         </StackPanel>
 
         <Label Content="ID :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,139,0,0" RenderTransformOrigin="0.5,0.5" Width="50"/>
-        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="104,147,0,0" Height="21"/>
+        <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="104,147,0,0" Height="21" IsReadOnly="True"/>
+
 
         <Label Content="Booking ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,242,0,0" RenderTransformOrigin="0.592,0.218"/>
         <ComboBox x:Name="BookingIdComboBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="188" Margin="104,251,0,0" DisplayMemberPath="Id" SelectedValuePath="Id" Height="20"/>
