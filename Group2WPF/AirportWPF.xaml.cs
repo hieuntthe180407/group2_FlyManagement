@@ -76,29 +76,33 @@ namespace Group2WPF
         {
             try
             {
-                if (ValidateData())
+                var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    int id;
-                    if (!int.TryParse(txtairportId.Text, out id))
+                    if (ValidateData())
                     {
-                        MessageBox.Show("Invalid ID format!", "Validation Error");
-                        return;
+                        int id;
+                        if (!int.TryParse(txtairportId.Text, out id))
+                        {
+                            MessageBox.Show("Invalid ID format!", "Validation Error");
+                            return;
+                        }
+
+                        Airport newAirport = new Airport
+                        {
+                            Id = id, // Set the id manually
+                            Code = txtairportCode.Text,
+                            Name = txtairportName.Text,
+                            Country = txtairportCountry.Text,
+                            State = txtairportState.Text,
+                            City = txtairportCity.Text
+                        };
+
+                        _airportService.InsertAirport(newAirport);
+                        MessageBox.Show("Airport added successfully", "Success");
+                        LoadAirport();
+                        ResetInput();
                     }
-
-                    Airport newAirport = new Airport
-                    {
-                        Id = id, // Set the id manually
-                        Code = txtairportCode.Text,
-                        Name = txtairportName.Text,
-                        Country = txtairportCountry.Text,
-                        State = txtairportState.Text,
-                        City = txtairportCity.Text
-                    };
-
-                    _airportService.InsertAirport(newAirport);
-                    MessageBox.Show("Airport added successfully", "Success");
-                    LoadAirport();
-                    ResetInput();
                 }
             }
             catch (Exception ex)
@@ -111,27 +115,32 @@ namespace Group2WPF
         {
             try
             {
-                if (ValidateData())
+
+                var result = MessageBox.Show("Are you sure you want to Update this airline?", "Confirm update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    int id = Int32.Parse(txtairportId.Text);
-                    Airport existingAirport = _airportService.GetAirportById(id);
-                    if (existingAirport == null)
+                    if (ValidateData())
                     {
-                        MessageBox.Show("Airport not found", "Error");
-                        return;
+                        int id = Int32.Parse(txtairportId.Text);
+                        Airport existingAirport = _airportService.GetAirportById(id);
+                        if (existingAirport == null)
+                        {
+                            MessageBox.Show("Airport not found", "Error");
+                            return;
+                        }
+
+                        existingAirport.Code = txtairportCode.Text;
+                        existingAirport.Name = txtairportName.Text;
+                        existingAirport.Country = txtairportCountry.Text;
+                        existingAirport.State = txtairportState.Text;
+                        existingAirport.City = txtairportCity.Text;
+
+                        _airportService.UpdateAirport(existingAirport);
+                        MessageBox.Show("Airport updated successfully", "Success");
+
+                        LoadAirport();
+                        ResetInput();
                     }
-
-                    existingAirport.Code = txtairportCode.Text;
-                    existingAirport.Name = txtairportName.Text;
-                    existingAirport.Country = txtairportCountry.Text;
-                    existingAirport.State = txtairportState.Text;
-                    existingAirport.City = txtairportCity.Text;
-
-                    _airportService.UpdateAirport(existingAirport);
-                    MessageBox.Show("Airport updated successfully", "Success");
-
-                    LoadAirport();
-                    ResetInput();
                 }
             }
             catch (Exception ex)
@@ -144,17 +153,21 @@ namespace Group2WPF
         {
             try
             {
-                int id = Int32.Parse(txtairportId.Text);
-                Airport existingAirport = _airportService.GetAirportById(id);
-                if (existingAirport == null)
+                var result = MessageBox.Show("Are you sure you want to Delete this airline?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    MessageBox.Show("Airport not found", "Error");
-                    return;
+                    int id = Int32.Parse(txtairportId.Text);
+                    Airport existingAirport = _airportService.GetAirportById(id);
+                    if (existingAirport == null)
+                    {
+                        MessageBox.Show("Airport not found", "Error");
+                        return;
+                    }
+                    _airportService.DeleteAirport(existingAirport);
+                    MessageBox.Show("Airport deleted successfully", "Success");
+                    LoadAirport();
+                    ResetInput();
                 }
-                _airportService.DeleteAirport(existingAirport);
-                MessageBox.Show("Airport deleted successfully", "Success");
-                LoadAirport();
-                ResetInput();
             }
             catch (Exception ex)
             {
