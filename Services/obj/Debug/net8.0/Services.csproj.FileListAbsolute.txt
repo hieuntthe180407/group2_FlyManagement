@@ -88,3 +88,4 @@ D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\S
 D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\refint\Services.dll
 D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\Services.pdb
 D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\obj\Debug\net8.0\ref\Services.dll
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Services\bin\Debug\net8.0\FlightManagementDbContext.cs
