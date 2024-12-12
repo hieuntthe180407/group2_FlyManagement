@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\trong\Documents\GitHub\group2_FlyManagement\Group2WPF\obj\Debug\net8.0-windows\
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Group2WPF\obj\Debug\net8.0-windows\
 Group2WPF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\trong\Documents\GitHub\group2_FlyManagement\Group2WPF\App.xaml
+D:\FPT Study\Ki 10 FPTU\Project\group2_FlyManagement\Group2WPF\App.xaml
 10-409794772
 
 15358074753
-249-693366729
+257-319383339
 AirlineWPF.xaml;AirportWPF.xaml;BaggageWindow.xaml;BookingPlatformWindow.xaml;BookingWPF.xaml;FlightWPF.xaml;Login.xaml;MainWindow.xaml;PassengerWPF.xaml;Window1.xaml;
 
-False
+True
 
