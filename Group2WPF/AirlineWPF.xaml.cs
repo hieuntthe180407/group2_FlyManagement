@@ -74,33 +74,42 @@ namespace Group2WPF
 
         private void UpdateAirlineButton_Click(object sender, RoutedEventArgs e)
         {
-            try
+             try
             {
                 if (ValidateData())
                 {
-                    if (!int.TryParse(txtairlineid.Text, out int id))
+
+                    var result = MessageBox.Show("Are you sure you want to edit this airline?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
                     {
-                        MessageBox.Show("Please enter a valid numeric ID", "Invalid Input");
-                        return;
+
+                        if (!int.TryParse(txtairlineid.Text, out int id))
+                        {
+                            MessageBox.Show("Please enter a valid numeric ID", "Invalid Input");
+                            return;
+                        }
+
+                        var airline = _airlineService.GetAirlinebyId(id);
+                        if (airline == null)
+                        {
+                            MessageBox.Show("Airline not found", "Error");
+                            return;
+                        }
+
+
+                        airline.Code = txtairlinecode.Text;
+                        airline.Name = txtairlinename.Text;
+                        airline.Country = txtairlinecountry.Text;
+
+                        _airlineService.UpdateAirline(airline);
+                        MessageBox.Show("Airline updated successfully", "Success");
+
+                        LoadAirlines(); // Reload data after update
+                        ResetInput();
                     }
-
-                    var airline = _airlineService.GetAirlinebyId(id);
-                    if (airline == null)
-                    {
-                        MessageBox.Show("Airline not found", "Error");
-                        return;
-                    }
-
-                    airline.Code = txtairlinecode.Text;
-                    airline.Name = txtairlinename.Text;
-                    airline.Country = txtairlinecountry.Text;
-
-                    _airlineService.UpdateAirline(airline);
-                    MessageBox.Show("Airline updated successfully", "Success");
-
-                    LoadAirlines(); // Reload data after update
-                    ResetInput();
                 }
+                       
+                    
             }
             catch (Exception ex)
             {
