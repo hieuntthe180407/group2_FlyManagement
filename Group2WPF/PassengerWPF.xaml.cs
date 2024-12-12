@@ -71,6 +71,7 @@ namespace Group2WPF
 			return true;
 		}
 
+<<<<<<< HEAD
         private void Insert_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -81,6 +82,64 @@ namespace Group2WPF
                     var passengers = _passengerService.GetAll();
                    
                     int nextId = passengers.Count > 0 ? passengers.Max(p => p.Id) + 1 : 1;
+=======
+		private void Insert_Click(object sender, RoutedEventArgs e)
+		{
+			try
+            {
+                var result = MessageBox.Show("Are you sure you want to Delete this flight?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+					if (ValidateData())
+					{
+						int id = Int32.Parse(txtID.Text);
+						string fname = txtFName.Text;
+						string lname = txtLName.Text;
+						string gmail = txtGmail.Text;
+						string country = txtCountry.Text;
+						string gender = "";
+						DateOnly dob = DateOnly.Parse(dpDOB.Text);
+						if (rbFemale.IsChecked == true)
+						{
+							gender = "Female";
+						}
+						else
+						{
+							gender = "Male";
+						}
+						Passenger? pp = _passengerService.Get(id);
+						if (pp != null)
+						{
+							MessageBox.Show("duplicate");
+							return;
+						}
+						Passenger p = new Passenger()
+						{
+							Id = id,
+							FirstName = fname,
+							LastName = lname,
+							Email = gmail,
+							Country = country,
+							Gender = gender,
+							DateOfBirth = dob,
+						};
+						_passengerService.Add(p);
+						MessageBox.Show("Add successfully", "Success");
+						LoadPassenger();
+					}
+				}
+				else
+				{
+					return;
+				}
+			}catch (Exception ex)
+			{
+				MessageBox.Show("Let check your ID, ID is duplicate", "Fail by duplicate id");
+			}
+			
+			//ResetInput();
+		}
+>>>>>>> origin/hienvm2
 
                     string fname = txtFName.Text;
                     string lname = txtLName.Text;
@@ -122,45 +181,50 @@ namespace Group2WPF
 		{
 			try
 			{
-				if (ValidateData())
-				{
-					int id = Int32.Parse(txtID.Text);
-					Passenger? p = _passengerService.Get(id);
-					if (p == null)
+                var result = MessageBox.Show("Are you sure you want to Delete this flight?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+					if (ValidateData())
 					{
-						MessageBox.Show("Not found passenger", "Fail!");
-					}
-					else
-					{
-						string fname = txtFName.Text;
-						string lname = txtLName.Text;
-						string gmail = txtGmail.Text;
-						string country = txtCountry.Text;
-						string gender = "";
-						DateOnly dob = DateOnly.Parse(dpDOB.Text);
-						if (rbFemale.IsChecked == true)
+						int id = Int32.Parse(txtID.Text);
+						Passenger? p = _passengerService.Get(id);
+						if (p == null)
 						{
-							gender = "Female";
+							MessageBox.Show("Not found passenger", "Fail!");
 						}
 						else
 						{
-							gender = "Male";
+							string fname = txtFName.Text;
+							string lname = txtLName.Text;
+							string gmail = txtGmail.Text;
+							string country = txtCountry.Text;
+							string gender = "";
+							DateOnly dob = DateOnly.Parse(dpDOB.Text);
+							if (rbFemale.IsChecked == true)
+							{
+								gender = "Female";
+							}
+							else
+							{
+								gender = "Male";
+							}
+							p = new Passenger()
+							{
+								Id = id,
+								FirstName = fname,
+								LastName = lname,
+								Email = gmail,
+								Country = country,
+								Gender = gender,
+								DateOfBirth = dob,
+							};
+							_passengerService.Update(p);
+							MessageBox.Show("Update successfully", "Success");
+							txtID.IsReadOnly = false;
+							ResetInput();
+							txtFilterFNameOrLastName.Text = string.Empty;
+							dpFilterDOB.Text = string.Empty;
 						}
-						p = new Passenger()
-						{
-							Id = id,
-							FirstName = fname,
-							LastName = lname,
-							Email = gmail,
-							Country = country,
-							Gender = gender,
-							DateOfBirth = dob,
-						};
-						_passengerService.Update(p);
-						txtID.IsReadOnly = false;
-						ResetInput();
-						txtFilterFNameOrLastName.Text = string.Empty;
-						dpFilterDOB.Text = string.Empty;
 					}
 				}
 
@@ -225,20 +289,25 @@ namespace Group2WPF
 		private void Delete_Click(object sender, RoutedEventArgs e)
 		{
 			try
-			{
-				if (ValidateData())
-				{
-					int id = Int32.Parse(txtID.Text);
-					Passenger? p = _passengerService.Get(id);
-					if (p == null)
+            {
+                var result = MessageBox.Show("Are you sure you want to Delete this flight?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
+                {
+					if (ValidateData())
 					{
-						MessageBox.Show("Not found passenger", "Fail!");
-					}
-					else
-					{
-						_passengerService.Delete(p);
-						txtID.IsReadOnly = false;
-						ResetInput();
+						int id = Int32.Parse(txtID.Text);
+						Passenger? p = _passengerService.Get(id);
+						if (p == null)
+						{
+							MessageBox.Show("Not found passenger", "Fail!");
+						}
+						else
+						{
+							_passengerService.Delete(p);
+							MessageBox.Show("Delete successfully", "Success");
+							txtID.IsReadOnly = false;
+							ResetInput();
+						}
 					}
 				}
 

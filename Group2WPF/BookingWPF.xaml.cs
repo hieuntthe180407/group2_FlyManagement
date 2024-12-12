@@ -109,15 +109,20 @@ namespace Group2WPF
         {
             try
             {
-                if (txtId.Text.Length > 0)
-                {
-                    Booking booking = new Booking();
-                    booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
-                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
-                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
-                    booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
-                    _bookingService.updateBooking(booking);
+                var result = MessageBox.Show("Are you sure you want to Update this Booking?", "Confirm update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes) {
+                    if (txtId.Text.Length > 0)
+                    {
+                        Booking booking = new Booking();
+                        booking.Id = Int32.Parse(txtId.Text);
+                        booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                        booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                        booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
+                        booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
+                        _bookingService.updateBooking(booking);
+                        MessageBox.Show("Update successfully", "Success");
+                    }
+
                 }
                 else
                 {
@@ -139,6 +144,7 @@ namespace Group2WPF
         {
             try
             {
+<<<<<<< HEAD
                 // Lấy ID lớn nhất hiện tại từ cơ sở dữ liệu
                 var maxId = _bookingService.getAll().Max(b => b.Id);
 
@@ -155,6 +161,26 @@ namespace Group2WPF
                 _bookingService.addBooking(booking);
 
                 MessageBox.Show("Booking added successfully", "Success");
+=======
+                var result = MessageBox.Show("Are you sure you want to create this Booking?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes) {
+                    if (_bookingService.getBookingById(Int32.Parse(txtId.Text)) != null)
+                    {
+                        MessageBox.Show("Code existed!", "ERROR");
+                    }
+                    else
+                    {
+                        Booking booking = new Booking();
+                        booking.Id = Int32.Parse(txtId.Text);
+                        booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                        booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                        booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
+                        booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
+                        _bookingService.addBooking(booking);
+                        MessageBox.Show("Add successfully", "Success");
+                    }
+                }
+>>>>>>> origin/hienvm2
             }
             catch (Exception ex)
             {
@@ -172,15 +198,19 @@ namespace Group2WPF
         {
             try
             {
-                if (txtId.Text.Length > 0)
-                {
-                    Booking booking = new Booking();
-                    booking.Id = Int32.Parse(txtId.Text);
-                    booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
-                    booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
-                    booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
-                    booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
-                    _bookingService.removeBooking(booking);
+                var result = MessageBox.Show("Are you sure you want to Delete this airline?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes) {
+                    if (txtId.Text.Length > 0)
+                    {
+                        Booking booking = new Booking();
+                        booking.Id = Int32.Parse(txtId.Text);
+                        booking.PassengerId = Int32.Parse(cboPassenger.SelectedValue.ToString());
+                        booking.FlightId = Int32.Parse(cboFlight.SelectedValue.ToString());
+                        booking.BookingPlatformId = Int32.Parse(cboBookingPlatform.SelectedValue.ToString());
+                        booking.BookingTime = DateTime.Parse(txtBookingTime.Text);
+                        _bookingService.removeBooking(booking);
+                        MessageBox.Show("Delete successfully", "Success");
+                    }
                 }
                 else
                 {

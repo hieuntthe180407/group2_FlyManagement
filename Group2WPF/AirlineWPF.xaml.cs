@@ -78,11 +78,17 @@ namespace Group2WPF
             {
                 if (ValidateData())
                 {
+<<<<<<< HEAD
 
                     var result = MessageBox.Show("Are you sure you want to edit this airline?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question);
                     if (result == MessageBoxResult.Yes)
                     {
 
+=======
+                    var result = MessageBox.Show("Are you sure you want to edit this airline?", "Confirm Update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    if (result == MessageBoxResult.Yes)
+                    {
+>>>>>>> origin/hienvm2
                         if (!int.TryParse(txtairlineid.Text, out int id))
                         {
                             MessageBox.Show("Please enter a valid numeric ID", "Invalid Input");
@@ -96,7 +102,10 @@ namespace Group2WPF
                             return;
                         }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/hienvm2
                         airline.Code = txtairlinecode.Text;
                         airline.Name = txtairlinename.Text;
                         airline.Country = txtairlinecountry.Text;
@@ -107,9 +116,13 @@ namespace Group2WPF
                         LoadAirlines(); // Reload data after update
                         ResetInput();
                     }
+<<<<<<< HEAD
                 }
                        
                     
+=======
+                    }
+>>>>>>> origin/hienvm2
             }
             catch (Exception ex)
             {
@@ -121,6 +134,7 @@ namespace Group2WPF
         {
             try
             {
+<<<<<<< HEAD
                 if (ValidateData())
                 {
                     
@@ -143,6 +157,40 @@ namespace Group2WPF
                     // Tải lại dữ liệu
                     LoadAirlines();
                     ResetInput();
+=======
+                var result = MessageBox.Show("Are you sure you want to Add this airline?", "Confirm Add", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes) { 
+                
+                        if (ValidateData())
+                    {
+                        if (!int.TryParse(txtairlineid.Text, out int id))
+                        {
+                            MessageBox.Show("Please enter a valid numeric ID", "Invalid Input");
+                            return;
+                        }
+
+                        var existingAirline = _airlineService.GetAirlinebyId(id);
+                        if (existingAirline != null)
+                        {
+                            MessageBox.Show("Airline with this ID already exists", "Error");
+                            return;
+                        }
+
+                        var newAirline = new Airline
+                        {
+                            Id = id,
+                            Code = txtairlinecode.Text,
+                            Name = txtairlinename.Text,
+                            Country = txtairlinecountry.Text
+                        };
+
+                        _airlineService.InsertAirline(newAirline);
+                        MessageBox.Show("Airline added successfully", "Success");
+
+                        LoadAirlines(); // Reload data after insert
+                        ResetInput();
+                    }
+>>>>>>> origin/hienvm2
                 }
             }
             catch (Exception ex)
@@ -156,24 +204,29 @@ namespace Group2WPF
         {
             try
             {
-                if (!int.TryParse(txtairlineid.Text, out int id))
+                var result = MessageBox.Show("Are you sure you want to Delete this airline?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.Yes)
                 {
-                    MessageBox.Show("Please enter a valid numeric ID", "Invalid Input");
-                    return;
+
+                    if (!int.TryParse(txtairlineid.Text, out int id))
+                    {
+                        MessageBox.Show("Please enter a valid numeric ID", "Invalid Input");
+                        return;
+                    }
+
+                    var existingAirline = _airlineService.GetAirlinebyId(id);
+                    if (existingAirline == null)
+                    {
+                        MessageBox.Show("Airline not found", "Error");
+                        return;
+                    }
+
+                    _airlineService.DeleteAirline(existingAirline);
+                    MessageBox.Show("Airline deleted successfully", "Success");
+
+                    LoadAirlines(); // Reload data after delete
+                    ResetInput();
                 }
-
-                var existingAirline = _airlineService.GetAirlinebyId(id);
-                if (existingAirline == null)
-                {
-                    MessageBox.Show("Airline not found", "Error");
-                    return;
-                }
-
-                _airlineService.DeleteAirline(existingAirline);
-                MessageBox.Show("Airline deleted successfully", "Success");
-
-                LoadAirlines(); // Reload data after delete
-                ResetInput();
             }
             catch (Exception ex)
             {

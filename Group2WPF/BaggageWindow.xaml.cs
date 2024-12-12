@@ -99,6 +99,7 @@ namespace Group2WPF
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             try
             {
                
@@ -120,6 +121,32 @@ namespace Group2WPF
 
                
                 ResetFields();
+=======
+            var result = MessageBox.Show("Are you sure you want to create this airline?", "Confirm create", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes) {
+                if (int.TryParse(IdTextBox.Text, out int id))
+                {
+                    // Check for duplicate ID
+                    if (_context.Baggages.Any(b => b.Id == id))
+                    {
+                        MessageBox.Show("Duplicate ID. Please enter a unique ID.");
+                        return;
+                    }
+
+                    var newBaggage = new Baggage
+                    {
+                        Id = id,
+                        BookingId = (int)BookingIdComboBox.SelectedValue,
+                        WeightInKg = decimal.Parse(WeightInKgTextBox.Text)
+                    };
+
+                    _context.Baggages.Add(newBaggage);
+                    MessageBox.Show("Add successfully", "Success");
+                    _context.SaveChanges();
+                    LoadData();
+                    ResetFields();
+                }
+>>>>>>> origin/hienvm2
             }
             catch (Exception ex)
             {
@@ -129,35 +156,44 @@ namespace Group2WPF
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_selectedBaggage != null)
+            var result = MessageBox.Show("Are you sure you want to Update this airline?", "Confirm update", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
             {
-                int newId = int.Parse(IdTextBox.Text);
-
-                // Check for duplicate ID
-                if (_context.Baggages.Any(b => b.Id == newId && b.Id != _selectedBaggage.Id))
+                if (_selectedBaggage != null)
                 {
-                    MessageBox.Show("Duplicate ID. Please enter a unique ID.");
-                    return;
+                    int newId = int.Parse(IdTextBox.Text);
+
+                    // Check for duplicate ID
+                    if (_context.Baggages.Any(b => b.Id == newId && b.Id != _selectedBaggage.Id))
+                    {
+                        MessageBox.Show("Duplicate ID. Please enter a unique ID.");
+                        return;
+                    }
+
+                    _selectedBaggage.Id = newId;
+                    _selectedBaggage.BookingId = (int)BookingIdComboBox.SelectedValue;
+                    _selectedBaggage.WeightInKg = decimal.Parse(WeightInKgTextBox.Text);
+                    MessageBox.Show("Update successfully", "Success");
+                    _context.SaveChanges();
+                    LoadData();
+                    ResetFields();
                 }
-
-                _selectedBaggage.Id = newId;
-                _selectedBaggage.BookingId = (int)BookingIdComboBox.SelectedValue;
-                _selectedBaggage.WeightInKg = decimal.Parse(WeightInKgTextBox.Text);
-
-                _context.SaveChanges();
-                LoadData();
-                ResetFields();
             }
         }
 
         private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
-            if (_selectedBaggage != null)
+            var result = MessageBox.Show("Are you sure you want to Delete this airline?", "Confirm delete", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
             {
-                _context.Baggages.Remove(_selectedBaggage);
-                _context.SaveChanges();
-                LoadData();
-                ResetFields();
+                if (_selectedBaggage != null)
+                {
+                    _context.Baggages.Remove(_selectedBaggage);
+                    MessageBox.Show("Delete successfully", "Success");
+                    _context.SaveChanges();
+                    LoadData();
+                    ResetFields();
+                }
             }
         }
 
