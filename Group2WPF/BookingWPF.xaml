@@ -8,34 +8,63 @@
         Loaded="Window_Loaded"
         WindowStartupLocation="CenterScreen"
         Title="BookingWPF" Height="600" Width="900">
+    <Window.Resources>
+        <!-- Style for TextBox elements -->
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="642"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <!-- Style for Label elements -->
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+
+        <!-- Style for Button elements -->
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Width" Value="124"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+        </Style>
+
+        <!-- Style for ComboBox elements -->
+        <Style TargetType="ComboBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="642"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Button Content="Back" Width="60" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Click="BackButton_Click"/>
         <DataGrid Name="dgData" Margin="229,203,29,95" SelectionChanged="dgData_SelectionChanged"/>
-        <TextBox Name="txtId" HorizontalAlignment="Left" Margin="229,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642" IsReadOnly="True"/>
-        <Label Content="Booking ID" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="78" Height="26"/>
-        <Label Content="Passenger ID" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
-        <Label Content="Flight ID" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
-        <Label Content="Booking Platform ID" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top"/>
-        <Label Content="Booking Time" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtBookingTime" HorizontalAlignment="Left" Margin="229,160,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="642"/>
-        <Label Content="Booking Management" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="275" Height="46"
-               FontSize="25" FontWeight="Bold"/>
-        <Button Content="Add" Click="ButtonAdd_Click" HorizontalAlignment="Left" Margin="229,509,0,0" VerticalAlignment="Top" Height="48" Width="124"/>
-        <Button Content="Update" Click="ButtonUpdate_Click" HorizontalAlignment="Left" Margin="376,509,0,0" VerticalAlignment="Top" Height="48" Width="124"/>
-        <Button Content="Delete" Click="ButtonDelete_Click" HorizontalAlignment="Left" Margin="524,509,0,0" VerticalAlignment="Top" Height="48" Width="124"/>
-        <Button Content="Close" Click="ButtonClose_Click" HorizontalAlignment="Left" Margin="747,509,0,0" VerticalAlignment="Top" Height="48" Width="124"/>
-        <Label Content="FIlter By:" HorizontalAlignment="Left" Margin="10,203,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Passenger ID" HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top"/>
-        <Label Content="Flight ID" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top"/>
-        <Label Content="Booking Platform ID" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top"/>
-        <Label Content="Booking Time" HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top"/>
-        <TextBox Name="filterPID" HorizontalAlignment="Left" Margin="16,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="filter_PassengerID"/>
-        <TextBox Name="filterFID" HorizontalAlignment="Left" Margin="16,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="filter_FlightID"/>
-        <TextBox Name="filterBPID" HorizontalAlignment="Left" Margin="16,336,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="filter_BookingPlatformID"/>
-        <ComboBox Name="cboPassenger" HorizontalAlignment="Left" Margin="229,89,0,0" VerticalAlignment="Top" Width="642"/>
-        <ComboBox Name="cboFlight" HorizontalAlignment="Left" Margin="229,112,0,0" VerticalAlignment="Top" Width="642"/>
-        <ComboBox Name="cboBookingPlatform" HorizontalAlignment="Left" Margin="229,135,0,0" VerticalAlignment="Top" Width="642"/>
-        <TextBox Name="datePicker" HorizontalAlignment="Left" Margin="16,380,0,0" VerticalAlignment="Top" Width="120" TextChanged="datePicker_TextChanged"/>
-
+        <TextBox Name="txtId" Margin="229,68,0,0" Text="" IsReadOnly="True"/>
+        <Label Content="Booking ID" Margin="10,64,0,0"/>
+        <Label Content="Passenger ID" Margin="10,87,0,0"/>
+        <Label Content="Flight ID" Margin="10,110,0,0"/>
+        <Label Content="Booking Platform ID" Margin="10,133,0,0"/>
+        <Label Content="Booking Time" Margin="10,156,0,0"/>
+        <TextBox x:Name="txtBookingTime" Margin="229,160,0,0"/>
+        <Label Content="Booking Management" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="275" Height="46" FontSize="25" FontWeight="Bold"/>
+        <Button Content="Add" Click="ButtonAdd_Click" Margin="229,509,0,0"/>
+        <Button Content="Update" Click="ButtonUpdate_Click" Margin="376,509,0,0"/>
+        <Button Content="Delete" Click="ButtonDelete_Click" Margin="524,509,0,0"/>
+        <Button Content="Close" Click="ButtonClose_Click" Margin="747,509,0,0"/>
+        <Label Content="FIlter By:" Margin="10,203,0,0" FontWeight="Bold"/>
+        <Label Content="Passenger ID" Margin="10,223,0,0"/>
+        <Label Content="Flight ID" Margin="10,266,0,0"/>
+        <Label Content="Booking Platform ID" Margin="10,310,0,0"/>
+        <Label Content="Booking Time" Margin="10,354,0,0"/>
+        <TextBox Name="filterPID" Margin="16,248,0,0" Width="120" TextChanged="filter_PassengerID"/>
+        <TextBox Name="filterFID" Margin="16,292,0,0" Width="120" TextChanged="filter_FlightID"/>
+        <TextBox Name="filterBPID" Margin="16,336,0,0" Width="120" TextChanged="filter_BookingPlatformID"/>
+        <ComboBox Name="cboPassenger" Margin="229,89,0,0"/>
+        <ComboBox Name="cboFlight" Margin="229,112,0,0"/>
+        <ComboBox Name="cboBookingPlatform" Margin="229,135,0,0"/>
+        <TextBox Name="datePicker" Margin="16,380,0,0" Width="120" TextChanged="datePicker_TextChanged"/>
     </Grid>
 </Window>

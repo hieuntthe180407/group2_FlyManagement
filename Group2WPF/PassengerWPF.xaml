@@ -17,7 +17,7 @@
             <Setter Property="HorizontalAlignment" Value="Left" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
-
+        
         <!-- Style for TextBoxes -->
         <Style TargetType="TextBox">
             <Setter Property="Background" Value="#FFD8C8C8" />
@@ -25,20 +25,20 @@
             <Setter Property="HorizontalAlignment" Value="Left" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
-
+        
         <!-- Style for Labels -->
         <Style TargetType="Label">
             <Setter Property="Width" Value="96" />
             <Setter Property="HorizontalAlignment" Value="Left" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
-
+        
         <!-- Style for RadioButtons -->
         <Style TargetType="RadioButton">
             <Setter Property="HorizontalAlignment" Value="Left" />
             <Setter Property="VerticalAlignment" Value="Top" />
         </Style>
-
+        
         <!-- Style for DatePickers -->
         <Style TargetType="DatePicker">
             <Setter Property="HorizontalAlignment" Value="Left" />

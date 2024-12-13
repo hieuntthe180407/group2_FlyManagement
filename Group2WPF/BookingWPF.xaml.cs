@@ -44,8 +44,23 @@ namespace Group2WPF
         private void getAllBooking()
         {
             dgData.ItemsSource = null;
-            dgData.ItemsSource = _bookingService.getAll();
+            // Get all bookings
+            var allBookings = _bookingService.getAll();
+
+            // Select only the required properties (Id, PassengerId, FlightId)
+            var selectedBookings = allBookings.Select(b => new
+            {
+                b.Id,
+                b.PassengerId,
+                b.FlightId,
+                b.BookingPlatformId,
+                b.BookingTime,
+            }).ToList();
+
+            // Bind to the DataGrid
+            dgData.ItemsSource = selectedBookings;
         }
+
         private void getAllPassenger()
         {
             cboPassenger.ItemsSource = _passengerService.GetAll();

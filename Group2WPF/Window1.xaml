@@ -16,7 +16,7 @@
         <!--// Toggle Button Style Template //-->
 
         <ImageBrush x:Key="tb_mouse_over"
-                    ImageSource="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\img\/tgBtn_MouseOver.png"/>
+                    ImageSource="C:\Users\trong\Downloads\Fly/img/tgBtn_MouseOver.png"/>
 
         <!--// Text font style //-->
 
@@ -62,7 +62,7 @@
 
         <!--// App Close Button Style Template //-->
 
-        <ImageBrush x:Key="CloseBtn_MouseOver" ImageSource="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\img\/tgBtn_MouseOver.png"/>
+        <ImageBrush x:Key="CloseBtn_MouseOver" ImageSource="C:\Users\trong\Downloads\Fly/img/tgBtn_MouseOver.png"/>
 
         <Style x:Key="Close_btn" TargetType="{x:Type Button}">
 
@@ -204,7 +204,7 @@
 
                     <Button.Background>
 
-                        <ImageBrush ImageSource="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\img/closeBtn_default.png"/>
+                        <ImageBrush ImageSource="C:\Users\trong\Downloads\Fly\img/closeBtn_default.png"/>
 
                     </Button.Background>
 
@@ -268,7 +268,7 @@
 
                             <ToggleButton.Background>
 
-                                <ImageBrush ImageSource="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\img/tgBtn_default.png"
+                                <ImageBrush ImageSource="C:\Users\trong\Downloads\Fly\img/tgBtn_default.png"
                                             Stretch="None"/>
 
                             </ToggleButton.Background>
@@ -344,7 +344,7 @@
                             <StackPanel Orientation="Horizontal"
                                             Width="230">
 
-                                <Image Source="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\ICon/img_home.png"
+                                <Image Source="C:\Users\trong\Downloads\Fly/Icon/img_home.png"
                                            Stretch="None"
                                            Margin="12,0,0,0"/>
 
@@ -375,7 +375,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\ICon/img-passenger-30.png"
+                                <Image Source="C:\Users\trong\Downloads\Fly/Icon/img-passenger-30.png"
                                        Stretch="None"
                                        />
 
@@ -406,7 +406,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\ICon/img_flight_30x.png"
+                                <Image Source="C:\Users\trong\Downloads\Fly/Icon/img_flight_30x.png"
                                        Stretch="None"
                                        />
 
@@ -437,7 +437,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\ICon/img_baggage30x.png"
+                                <Image Source="C:\Users\trong\Downloads\Fly/Icon/img_baggage30x.png"
                                        Stretch="None"
                                        />
 
@@ -468,7 +468,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\ICon/icons8-platform-30.png"
+                                <Image Source="C:\Users\trong\Downloads\Fly/Icon/icons8-platform-30.png"
                                        Stretch="None"
                                        />
 
@@ -499,7 +499,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\ICon/img_booking30x.png"
+                                <Image Source="C:\Users\trong\Downloads\Fly/Icon/img_booking30x.png"
                                        Stretch="None"
                                        />
 
@@ -529,7 +529,7 @@
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <Image Source="D:\C#BL5SU24\lancuoifinal123\group2_FlyManagement\ICon/img_signout.png"
+                                <Image Source="C:\Users\trong\Downloads\Fly/Icon/img_signout.png"
                                        Stretch="None"
                                        Margin="12,0,0,0"/>
 
