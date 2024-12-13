@@ -19,6 +19,7 @@ namespace Repositories
         void DeleteAirport(Airport airport);
 
         Airport? GetAirportbyId(int id);
+        Airport? GetAirportbyCode(string code);
 
         List<Airport> Filltername(string name);
     }

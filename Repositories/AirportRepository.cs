@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using DocumentFormat.OpenXml.Office2010.Excel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,6 +70,12 @@ namespace Repositories
         public List<Airport> GetAirport()
         {
             return _context.Airports.ToList();
+        }
+
+        public Airport? GetAirportbyCode(string code)
+        {
+            Airport? airport = _context.Airports.FirstOrDefault(a => a.Code == code);
+            return airport;
         }
     }
 }

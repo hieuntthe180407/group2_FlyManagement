@@ -17,6 +17,7 @@ namespace Services
         void DeleteAirline(Airline airline);
 
         Airline? GetAirlinebyId(int id);
+        Airline? GetAirlinebyCode(string code);
         List<Airline> FillerName(string name);
     }
 }

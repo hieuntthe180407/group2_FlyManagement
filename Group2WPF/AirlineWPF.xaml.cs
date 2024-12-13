@@ -304,10 +304,17 @@ namespace Group2WPF
 
                 foreach (var airline in airlinesList)
                 {
-                    if (_airlineService.GetAirlinebyId(airline.Id) != null)
+                    //if (_airlineService.GetAirlinebyId(airline.Id) != null)
+                    //{
+                    //    hasErrors = true;
+                    //    errorMessages.AppendLine($"Airline with ID {airline.Id} already exists.");
+                    //    continue;
+                    //}
+
+                    if (_airlineService.GetAirlinebyCode(airline.Code) != null)
                     {
                         hasErrors = true;
-                        errorMessages.AppendLine($"Airline with ID {airline.Id} already exists.");
+                        errorMessages.AppendLine($"Airline with Code {airline.Code} already exists.");
                         continue;
                     }
 

@@ -17,6 +17,7 @@ namespace Repositories
         void DeleteAirline(Airline airline);
 
         Airline? GetAirlinebyId(int id);
+        Airline? GetAirlinebyCode(string code);
 
         List<Airline> FillterName(string name);
     }

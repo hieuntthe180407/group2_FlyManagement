@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using DocumentFormat.OpenXml.Office2010.Excel;
 using Repositories;
 using System;
 using System.Collections.Generic;
@@ -42,6 +43,11 @@ namespace Services
         public List<Airport> FillterName(string name)
         {
             return _airportRepository.Filltername(name);
+        }
+
+        public Airport? GetAirportbyCode(string code)
+        {
+            return _airportRepository.GetAirportbyCode(code);
         }
     }
 }

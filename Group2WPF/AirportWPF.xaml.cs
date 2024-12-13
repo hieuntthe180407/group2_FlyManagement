@@ -283,10 +283,17 @@ namespace Group2WPF
 
                 foreach (var airport in airportsList)
                 {
-                    if (_airportService.GetAirportById(airport.Id) != null)
+                    //if (_airportService.GetAirportById(airport.Id) != null)
+                    //{
+                    //    hasErrors = true;
+                    //    errorMessages.AppendLine($"Airport with ID {airport.Id} already exists.");
+                    //    continue;
+                    //}
+
+                    if (_airportService.GetAirportbyCode(airport.Code) != null)
                     {
                         hasErrors = true;
-                        errorMessages.AppendLine($"Airport with ID {airport.Id} already exists.");
+                        errorMessages.AppendLine($"Airport with ID {airport.Code} already exists.");
                         continue;
                     }
 

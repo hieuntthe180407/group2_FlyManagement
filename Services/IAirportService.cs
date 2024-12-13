@@ -14,6 +14,7 @@ namespace Services
         void DeleteAirport(Airport airport);
         void UpdateAirport(Airport airport);
         Airport? GetAirportById(int id);
+        Airport? GetAirportbyCode(string code);
 
         List<Airport> FillterName(string name);
     }

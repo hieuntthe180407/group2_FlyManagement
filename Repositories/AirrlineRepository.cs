@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using DocumentFormat.OpenXml.Office2010.Excel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -94,6 +95,12 @@ namespace Repositories
 
             return _context.Airlines.Where(a => a.Name.ToLower().Contains( name.ToLower())).ToList();
 
+        }
+
+        public Airline? GetAirlinebyCode(string code)
+        {
+            Airline? airline = _context.Airlines.FirstOrDefault(x => x.Code == code);
+            return airline;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using DocumentFormat.OpenXml.Office2010.Excel;
 using Repositories;
 using System;
 using System.Collections.Generic;
@@ -45,6 +46,11 @@ namespace Services
         public List<Airline> FillerName(string name)
         {
             return _airliness.FillterName(name);
+        }
+
+        public Airline? GetAirlinebyCode(string code)
+        {
+            return _airliness.GetAirlinebyCode(code);
         }
     }
 }
